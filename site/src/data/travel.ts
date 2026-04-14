@@ -50,6 +50,10 @@ export function getDayTransport(day: DayPlan, tier: BudgetTier): string {
   return day.transport
 }
 
+export function formatMan(won: number): string {
+  return `${Math.round(won / 10000)}만`
+}
+
 export interface Restaurant {
   name: string
   nameJa: string
@@ -85,7 +89,7 @@ export const osakaDays: DayPlan[] = [
     transportHigh: '택시 자유 이용',
     slots: [
       { time: '09:00~12:00', place: '오사카성 천수각 + 공원 산책', note: '주유패스 무료', noteLow: '외관 무료 관람', mapQuery: '大阪城天守閣' },
-      { time: '12:30~13:30', food: '이마이 우동 (3.58/2,266건)', foodLow: '마츠야 규동 ¥400~', foodHigh: '호텔 레스토랑 런치 코스 ¥3,000~', note: '키츠네 우동 ¥1,100', noteLow: '난바역 주변 체인', noteHigh: '숙소 근처 고급 런치', mapQuery: '道頓堀今井本店', mapQueryLow: '松屋 なんば', mapQueryHigh: 'スイスホテル南海大阪 レストラン' },
+      { time: '12:30~13:30', food: '이마이 우동 (3.58/2,266건)', foodLow: '마츠야 규동 ¥400~', foodHigh: '호텔 레스토랑 런치 코스 ¥3,000~', note: '키츠네 우동 ¥930', noteLow: '난바역 주변 체인', noteHigh: '숙소 근처 고급 런치', mapQuery: '道頓堀今井本店', mapQueryLow: '松屋 なんば', mapQueryHigh: 'スイスホテル南海大阪 レストラン' },
       { time: '13:30~15:00', place: '호텔 체크인', note: '난바/신사이바시 비즈니스호텔', noteLow: '난바 호스텔/게스트하우스', noteHigh: '스위소텔 난카이 or 콘래드 오사카' },
       { time: '15:00~17:00', place: '신사이바시스지 쇼핑', food: 'CENTRE M 카페 (3.55/426건)', foodLow: '편의점 커피 ¥150', foodHigh: 'CENTRE M 아프타눈티 세트 ¥4,000~', mapQuery: '心斎橋筋商店街' },
       { time: '17:30~18:00', food: '하나다코 타코야키 (3.68/2,806건)', note: '신우메다 쇼쿠도가이', mapQuery: 'はなだこ 新梅田食道街' },
@@ -194,7 +198,7 @@ export const usjDay: DayPlan = {
   transportLow: 'ICOCA (JR 유니버설시티역)',
   transportHigh: '택시 자유 이용',
   slots: [
-    { time: '08:00~21:00', place: '유니버설 스튜디오 재팬', note: '1데이 패스 ¥9,400~10,900/인', noteLow: '1데이 패스만, 파크 내 최소 지출', noteHigh: '1데이 패스 + 익스프레스 패스 ¥6,000~15,000/인', mapQuery: 'ユニバーサル・スタジオ・ジャパン' },
+    { time: '08:00~21:00', place: '유니버설 스튜디오 재팬', note: '1데이 패스 ¥9,400~11,900/인', noteLow: '1데이 패스만, 파크 내 최소 지출', noteHigh: '1데이 패스 + 익스프레스 패스 ¥6,000~15,000/인', mapQuery: 'ユニバーサル・スタジオ・ジャパン' },
   ],
 }
 
@@ -212,7 +216,7 @@ export const kyotoDays: DayPlan[] = [
     transportHigh: '택시 자유 이용',
     slots: [
       { time: '08:00~09:00', place: '오사카 → 교토 이동', note: '한큐 ¥400 or 게이한 ¥420' },
-      { time: '09:00~10:30', place: '기요미즈데라', note: '입장 ¥400, 세계유산', mapQuery: '清水寺' },
+      { time: '09:00~10:30', place: '기요미즈데라', note: '입장 ¥500, 세계유산', mapQuery: '清水寺' },
       { time: '10:30~12:00', place: '산넨자카·니넨자카 산책', note: '야사카탑 포토', mapQuery: '三年坂 二年坂' },
       { time: '12:00~13:30', food: '난젠지 준세이 유도후 (3.53/767건)', foodLow: '편의점 or 기온 우동 ¥500~800', foodHigh: '준세이 특별 코스 유바 카이세키 ¥5,500~', note: '하나 코스 ¥3,630', noteLow: '기온 시조 근처 체인', noteHigh: '정원 뷰 특별석, 예약 추천', mapQuery: '南禅寺順正', mapQueryLow: 'うどん 祇園四条', mapQueryHigh: '南禅寺順正' },
       { time: '14:00~14:30', place: '하나미코지 거리', note: '마이코를 만날 수도', mapQuery: '花見小路通' },
@@ -299,7 +303,7 @@ export function calcBudget(osakaNights: number, usj: boolean, kyotoNights: numbe
 // ─── Restaurants ───
 
 export const osakaRestaurants: Restaurant[] = [
-  { name: '이마이 우동', nameJa: '道頓堀 今井', category: '우동', area: '도톤보리', tabelog: 3.58, reviews: 2266, price: '¥1,000~1,500', reservation: '예약 추천', recommended: '키츠네 우동 ¥1,100', day: 'O1' },
+  { name: '이마이 우동', nameJa: '道頓堀 今井', category: '우동', area: '도톤보리', tabelog: 3.58, reviews: 2266, price: '¥1,000~1,500', reservation: '예약 추천', recommended: '키츠네 우동 ¥930', day: 'O1' },
   { name: '하나다코', nameJa: 'はなだこ', category: '타코야키', area: '우메다', tabelog: 3.68, reviews: 2806, price: '~¥1,000', reservation: '테이크아웃', recommended: '네기마요 ¥650', day: 'O1' },
   { name: 'CENTRE M', nameJa: 'サントル エム', category: '카페', area: '니시신사이바시', tabelog: 3.55, reviews: 426, price: '¥2,000~3,000', reservation: '예약 추천', recommended: '아프타눈티 세트', day: 'O1' },
   { name: '미츠노', nameJa: '美津の', category: '오코노미야키', area: '도톤보리', tabelog: 3.56, reviews: 1628, price: '¥1,000~2,000', reservation: '워크인', recommended: '야마이모야키 ¥1,150', day: 'O2' },

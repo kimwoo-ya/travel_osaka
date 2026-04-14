@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="pt-16 pb-12 md:pt-24 md:pb-16 text-center px-4">
+    <header className="pt-16 pb-12 md:pt-24 md:pb-16 text-center px-4">
       <h1 className="font-serif text-4xl md:text-6xl font-bold text-ai tracking-tight">
         오사카·교토
       </h1>
@@ -11,6 +11,6 @@ export default function Hero() {
         2026년 5월 중순 · 2인 커플
       </p>
       <div className="mt-8 mx-auto w-24 h-px bg-gradient-to-r from-transparent via-kin to-transparent" />
-    </section>
+    </header>
   )
 }
