@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import { calcBudget } from '../data/travel'
 import type { BudgetTier } from '../data/travel'
 
@@ -58,6 +58,7 @@ const tiers = [
 
 export default function BudgetSection({ osakaNights, usj, kyotoNights, activeTier }: BudgetSectionProps) {
   const budget = calcBudget(osakaNights, usj, kyotoNights)
+  const reducedMotion = useReducedMotion()
 
   return (
     <section className="py-12 px-4">
@@ -73,10 +74,10 @@ export default function BudgetSection({ osakaNights, usj, kyotoNights, activeTie
           {tiers.map((tier, i) => (
             <motion.div
               key={tier.key}
-              initial={{ opacity: 0, y: 20 }}
+              initial={reducedMotion ? false : { opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
+              transition={reducedMotion ? { duration: 0 } : { duration: 0.4, delay: i * 0.1 }}
               className={`rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-md ${
                 activeTier === tier.key
                   ? 'bg-ai text-white border-ai shadow-md md:scale-[1.03] ring-2 ring-shu ring-offset-2'

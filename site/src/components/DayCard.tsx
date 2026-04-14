@@ -1,4 +1,4 @@
-import { motion } from 'framer-motion'
+import { motion, useReducedMotion } from 'framer-motion'
 import type { DayPlan, BudgetTier } from '../data/travel'
 import { getSlotFood, getSlotNote, getSlotMapQuery, getDayTransport } from '../data/travel'
 
@@ -16,13 +16,14 @@ function parseTabelog(text: string): { name: string; score: string; reviews: str
 
 export default function DayCard({ day, index, tier }: DayCardProps) {
   const transport = getDayTransport(day, tier)
+  const reducedMotion = useReducedMotion()
 
   return (
     <motion.div
-      initial={{ opacity: 0, y: 30 }}
+      initial={reducedMotion ? false : { opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
-      transition={{ duration: 0.45, delay: index * 0.05 }}
+      transition={reducedMotion ? { duration: 0 } : { duration: 0.45, delay: index * 0.05 }}
       className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-border"
     >
       <div className="flex flex-col md:flex-row">

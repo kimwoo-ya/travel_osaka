@@ -52,21 +52,23 @@ function App() {
         setBudgetTier={setBudgetTier}
       />
 
-      {/* Timeline */}
-      <section className="py-10 px-4">
-        <div className="max-w-3xl mx-auto space-y-5">
-          {days.map((day, i) => (
-            <DayCard key={day.id} day={day} index={i} tier={budgetTier} />
-          ))}
-        </div>
-      </section>
+      <main>
+        {/* Timeline */}
+        <section className="py-10 px-4">
+          <div className="max-w-3xl mx-auto space-y-5">
+            {days.map((day, i) => (
+              <DayCard key={day.id} day={day} index={i} tier={budgetTier} />
+            ))}
+          </div>
+        </section>
 
-      <BudgetSection
-        osakaNights={osakaNights}
-        usj={usj}
-        kyotoNights={kyotoNights}
-        activeTier={budgetTier}
-      />
+        <BudgetSection
+          osakaNights={osakaNights}
+          usj={usj}
+          kyotoNights={kyotoNights}
+          activeTier={budgetTier}
+        />
+      </main>
 
       <Footer />
     </div>
