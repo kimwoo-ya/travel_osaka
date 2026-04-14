@@ -4,10 +4,11 @@ import ControlBar from './components/ControlBar'
 import DayCard from './components/DayCard'
 import BudgetSection from './components/BudgetSection'
 import Footer from './components/Footer'
+import { ThemeProvider, useTheme } from './contexts/ThemeContext'
 import { osakaDays, usjDay, kyotoDays } from './data/travel'
 import type { DayPlan, BudgetTier } from './data/travel'
 
-function App() {
+function AppContent() {
   const [osakaNights, setOsakaNights] = useState(2)
   const [usj, setUsj] = useState(false)
   const [kyotoNights, setKyotoNights] = useState(0)
@@ -37,8 +38,18 @@ function App() {
     return [first, ...rest, ...middle, last]
   }, [osakaNights, usj, kyotoNights])
 
+  const { theme } = useTheme()
+
   return (
     <div className="min-h-screen bg-washi bg-seigaiha">
+      {theme === 'wafu' && (
+        <>
+          <div className="wafu-sakura" aria-hidden="true" />
+          <div className="wafu-sakura" aria-hidden="true" />
+          <div className="wafu-sakura" aria-hidden="true" />
+        </>
+      )}
+
       <Hero />
 
       <ControlBar
@@ -72,6 +83,14 @@ function App() {
 
       <Footer />
     </div>
+  )
+}
+
+function App() {
+  return (
+    <ThemeProvider>
+      <AppContent />
+    </ThemeProvider>
   )
 }
 

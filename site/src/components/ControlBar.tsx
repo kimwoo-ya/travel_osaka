@@ -1,5 +1,6 @@
 import type { BudgetTier } from '../data/travel'
 import { dailyTotal } from '../data/travel'
+import { useTheme } from '../contexts/ThemeContext'
 
 interface ControlBarProps {
   osakaNights: number
@@ -38,12 +39,14 @@ export default function ControlBar({
   budgetTier,
   setBudgetTier,
 }: ControlBarProps) {
+  const { theme, toggleTheme } = useTheme()
+  const isWafu = theme === 'wafu'
   const totalNights = osakaNights + (usj ? 1 : 0) + kyotoNights
   const totalDays = totalNights + 1
   const activeTier = tierOptions.find((t) => t.value === budgetTier)!
 
   return (
-    <nav aria-label="여행 일정 설정" className="sticky top-0 z-50 bg-washi/85 backdrop-blur-md border-b border-border shadow-sm">
+    <nav aria-label="여행 일정 설정" className={`sticky top-0 z-50 bg-washi/85 backdrop-blur-md border-b border-border shadow-sm ${isWafu ? 'wafu-nav' : ''}`}>
       <div className="max-w-4xl mx-auto px-3 py-2 md:px-4 md:py-3">
         {/* 한 줄로 컴팩트하게 */}
         <div className="flex items-center gap-2 md:gap-5 flex-wrap">
@@ -136,7 +139,7 @@ export default function ControlBar({
             </div>
           </div>
 
-          {/* 총 일정 + 일별 예산 */}
+          {/* 총 일정 + 일별 예산 + 테마 토글 */}
           <div className="ml-auto text-right flex items-center gap-2 md:gap-3">
             <span className="text-xs md:text-sm font-medium text-ai">
               <span className="font-bold text-shu">{totalNights}박{totalDays}일</span>
@@ -144,6 +147,26 @@ export default function ControlBar({
             <span className="text-xs text-text-light">
               일 ₩{formatMan(activeTier.daily)}
             </span>
+
+            {/* 구분선 */}
+            <div className="w-px h-5 bg-border" />
+
+            {/* 테마 토글 */}
+            <button
+              role="switch"
+              aria-checked={isWafu}
+              aria-label="테마 전환"
+              onClick={toggleTheme}
+              className={`relative flex items-center justify-center w-11 h-11 rounded-lg transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ai ${
+                isWafu
+                  ? 'bg-ai text-white'
+                  : 'bg-card text-ai border border-border hover:bg-card-hover'
+              }`}
+            >
+              <span className="text-base" aria-hidden="true">
+                {isWafu ? '\u26E9' : '\u{1F3D9}'}
+              </span>
+            </button>
           </div>
         </div>
       </div>

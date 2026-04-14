@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import type { DayPlan, BudgetTier } from '../data/travel'
 import { getSlotFood, getSlotNote, getSlotMapQuery, getDayTransport } from '../data/travel'
+import { useTheme } from '../contexts/ThemeContext'
 
 interface DayCardProps {
   day: DayPlan
@@ -15,23 +16,33 @@ function parseTabelog(text: string): { name: string; score: string; reviews: str
 }
 
 export default function DayCard({ day, index, tier }: DayCardProps) {
+  const { theme } = useTheme()
+  const isWafu = theme === 'wafu'
   const transport = getDayTransport(day, tier)
   const reducedMotion = useReducedMotion()
 
   return (
     <motion.div
-      initial={reducedMotion ? false : { opacity: 0, y: 30 }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={reducedMotion ? false : (isWafu ? { scaleY: 0, opacity: 0 } : { opacity: 0, y: 30 })}
+      whileInView={isWafu ? { scaleY: 1, opacity: 1 } : { opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-40px' }}
-      transition={reducedMotion ? { duration: 0 } : { duration: 0.45, delay: index * 0.05 }}
-      className="bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-border"
+      transition={reducedMotion ? { duration: 0 } : (isWafu
+        ? { scaleY: { duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: index * 0.08 }, opacity: { duration: 0.3, delay: index * 0.08 } }
+        : { duration: 0.45, delay: index * 0.05 }
+      )}
+      style={isWafu ? { transformOrigin: 'top center' } : undefined}
+      className={`bg-card rounded-2xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden border border-border ${isWafu ? 'wafu-card wafu-shimmer' : ''}`}
     >
       <div className="flex flex-col md:flex-row">
         {/* Day number */}
         <div className="flex-shrink-0 px-6 py-5 md:w-36 md:border-r md:border-border flex flex-col items-center justify-center bg-ai/[0.02]">
-          <span className="font-serif text-3xl md:text-4xl font-bold text-ai">
-            {day.title}
-          </span>
+          {isWafu ? (
+            <span className="wafu-stamp">{day.title}</span>
+          ) : (
+            <span className="font-serif text-3xl md:text-4xl font-bold text-ai">
+              {day.title}
+            </span>
+          )}
           <span className="text-xs text-text-light mt-1">{day.subtitle}</span>
         </div>
 

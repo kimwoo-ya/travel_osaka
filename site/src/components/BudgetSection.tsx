@@ -1,6 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { calcBudget } from '../data/travel'
 import type { BudgetTier } from '../data/travel'
+import { useTheme } from '../contexts/ThemeContext'
 
 interface BudgetSectionProps {
   osakaNights: number
@@ -57,13 +58,15 @@ const tiers = [
 ]
 
 export default function BudgetSection({ osakaNights, usj, kyotoNights, activeTier }: BudgetSectionProps) {
+  const { theme } = useTheme()
+  const isWafu = theme === 'wafu'
   const budget = calcBudget(osakaNights, usj, kyotoNights)
   const reducedMotion = useReducedMotion()
 
   return (
     <section className="py-12 px-4">
       <div className="max-w-4xl mx-auto">
-        <h2 className="font-serif text-2xl md:text-3xl font-bold text-ai text-center mb-2">
+        <h2 className={`font-serif text-2xl md:text-3xl font-bold text-ai text-center mb-2 ${isWafu ? 'wafu-heading' : ''}`}>
           예상 예산
         </h2>
         <p className="text-center text-sm text-text-light mb-8">
@@ -78,7 +81,7 @@ export default function BudgetSection({ osakaNights, usj, kyotoNights, activeTie
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={reducedMotion ? { duration: 0 } : { duration: 0.4, delay: i * 0.1 }}
-              className={`rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-md ${
+              className={`rounded-2xl overflow-hidden border transition-all duration-300 hover:shadow-md ${isWafu ? 'wafu-shimmer' : ''} ${
                 activeTier === tier.key
                   ? 'bg-ai text-white border-ai shadow-md md:scale-[1.03] ring-2 ring-shu ring-offset-2'
                   : 'bg-card border-border shadow-sm opacity-70'

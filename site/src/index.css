@@ -19,6 +19,258 @@
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M0 40a19.96 19.96 0 0 1 5.9-14.11 19.96 19.96 0 0 1 14.1-5.89h0A19.96 19.96 0 0 1 34.11 25.9 19.96 19.96 0 0 1 40 40' fill='none' stroke='%231B2838' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M40 40a19.96 19.96 0 0 1 5.9-14.11A19.96 19.96 0 0 1 60 20h0a19.96 19.96 0 0 1 14.11 5.89A19.96 19.96 0 0 1 80 40' fill='none' stroke='%231B2838' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M-40 40a19.96 19.96 0 0 1 5.9-14.11A19.96 19.96 0 0 1-20 20h0a19.96 19.96 0 0 1 14.11 5.89A19.96 19.96 0 0 1 0 40' fill='none' stroke='%231B2838' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M20 20a19.96 19.96 0 0 1 5.9-14.11A19.96 19.96 0 0 1 40 0h0a19.96 19.96 0 0 1 14.11 5.89A19.96 19.96 0 0 1 60 20' fill='none' stroke='%231B2838' stroke-width='0.3' opacity='0.06'/%3E%3Cpath d='M-20 20a19.96 19.96 0 0 1 5.9-14.11A19.96 19.96 0 0 1 0 0h0a19.96 19.96 0 0 1 14.11 5.89A19.96 19.96 0 0 1 20 20' fill='none' stroke='%231B2838' stroke-width='0.3' opacity='0.06'/%3E%3C/svg%3E");
 }
 
+/* ===== 和風 テーマ オーバーライド ===== */
+
+[data-theme="wafu"] {
+  --color-washi: #F7F3EB;
+  --color-ai: #1A1046;
+  --color-shu: #BA2636;
+  --color-kin: #C49A02;
+  --color-text: #1E1114;
+  --color-text-light: #5C4A3D;
+  --color-card: #FBF8F1;
+  --color-card-hover: #F5EFE0;
+  --color-border: #C9A96E;
+
+  --color-wafu-gold-glow: rgba(196, 154, 2, 0.15);
+  --color-wafu-gold-border: rgba(196, 154, 2, 0.4);
+  --wafu-pattern-opacity: 0.08;
+  --color-wafu-stamp-bg: #BA2636;
+  --color-wafu-stamp-text: #FBF8F1;
+}
+
+/* 麻の葉パターン (青海波を上書き) */
+[data-theme="wafu"] .bg-seigaiha {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='52' viewBox='0 0 60 52'%3E%3Cg fill='none' stroke='%23C49A02' stroke-width='0.5' opacity='0.08'%3E%3Cpath d='M30 0L60 26L30 52L0 26Z'/%3E%3Cpath d='M30 0L30 52'/%3E%3Cpath d='M0 26L60 26'/%3E%3Cpath d='M30 0L0 26L30 52'/%3E%3Cpath d='M30 0L60 26L30 52'/%3E%3Cpath d='M15 13L30 0L45 13'/%3E%3Cpath d='M15 39L30 52L45 39'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 60px 52px;
+}
+
+/* タイポグラフィ */
+[data-theme="wafu"] h1 {
+  letter-spacing: 0.15em;
+}
+
+[data-theme="wafu"] h2 {
+  letter-spacing: 0.1em;
+}
+
+/* 金箔区切り線 */
+[data-theme="wafu"] .wafu-divider {
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-wafu-gold-border) 15%,
+    var(--color-kin) 50%,
+    var(--color-wafu-gold-border) 85%,
+    transparent 100%
+  );
+  position: relative;
+}
+
+[data-theme="wafu"] .wafu-divider::before,
+[data-theme="wafu"] .wafu-divider::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Ccircle cx='6' cy='6' r='2' fill='%23C49A02' opacity='0.6'/%3E%3Ccircle cx='6' cy='6' r='4' fill='none' stroke='%23C49A02' stroke-width='0.5' opacity='0.4'/%3E%3Ccircle cx='6' cy='6' r='5.5' fill='none' stroke='%23C49A02' stroke-width='0.3' opacity='0.3'/%3E%3C/svg%3E");
+  background-size: contain;
+}
+
+[data-theme="wafu"] .wafu-divider::before {
+  left: -16px;
+}
+
+[data-theme="wafu"] .wafu-divider::after {
+  right: -16px;
+}
+
+/* 雲装飾 */
+[data-theme="wafu"] .wafu-cloud {
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  opacity: 0.06;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='40' viewBox='0 0 80 40'%3E%3Cpath d='M10 30 Q10 15 25 15 Q25 5 40 5 Q55 5 55 15 Q70 15 70 30 Z' fill='%23C49A02'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* 金箔二重ボーダーカード */
+[data-theme="wafu"] .wafu-card {
+  border: 1px solid var(--color-border);
+  box-shadow:
+    0 0 0 3px var(--color-card),
+    0 0 0 4px var(--color-wafu-gold-border);
+  border-radius: 1rem;
+  background: var(--color-card);
+}
+
+[data-theme="wafu"] .wafu-card:hover {
+  box-shadow:
+    0 0 0 3px var(--color-card),
+    0 0 0 4px var(--color-kin),
+    0 4px 16px var(--color-wafu-gold-glow);
+}
+
+/* 印鑑スタイルバッジ */
+[data-theme="wafu"] .wafu-stamp {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  border: 2px solid var(--color-wafu-stamp-bg);
+  color: var(--color-wafu-stamp-bg);
+  font-family: var(--font-serif);
+  font-weight: 700;
+  font-size: 1.25rem;
+  position: relative;
+  transform: rotate(-5deg);
+}
+
+[data-theme="wafu"] .wafu-stamp::after {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1px solid var(--color-wafu-stamp-bg);
+  opacity: 0.3;
+}
+
+/* 金箔シマーホバー */
+[data-theme="wafu"] .wafu-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+[data-theme="wafu"] .wafu-shimmer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(196, 154, 2, 0.08),
+    transparent
+  );
+  transition: left 0.6s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-theme="wafu"] .wafu-shimmer:hover::before {
+  left: 100%;
+}
+
+/* 和風ヘッディング */
+[data-theme="wafu"] .wafu-heading {
+  font-family: var(--font-serif);
+  letter-spacing: 0.1em;
+  position: relative;
+  display: inline-block;
+}
+
+[data-theme="wafu"] .wafu-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 10%;
+  right: 10%;
+  height: 2px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-kin),
+    transparent
+  );
+}
+
+/* ControlBar 和風スタイル */
+[data-theme="wafu"] .wafu-nav {
+  background: rgba(247, 243, 235, 0.92);
+  border-bottom: 2px solid var(--color-wafu-gold-border);
+}
+
+/* テーマ切替トランジション */
+.theme-transitioning,
+.theme-transitioning * {
+  transition: color 0.5s ease, background-color 0.5s ease, border-color 0.5s ease, box-shadow 0.5s ease !important;
+}
+
+/* 桜花びら */
+@keyframes wafu-sakura-fall {
+  0% {
+    transform: translateY(-10px) rotate(0deg) translateX(0);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.4;
+  }
+  100% {
+    transform: translateY(calc(100vh - 100px)) rotate(360deg) translateX(40px);
+    opacity: 0;
+  }
+}
+
+[data-theme="wafu"] .wafu-sakura {
+  position: fixed;
+  top: -20px;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 0C6 0 7.5 3 6 6C4.5 3 6 0 6 0Z' fill='%23BA2636' opacity='0.5'/%3E%3Cpath d='M6 0C6 0 7.5 3 6 6C4.5 3 6 0 6 0Z' fill='%23BA2636' opacity='0.4' transform='rotate(72 6 6)'/%3E%3Cpath d='M6 0C6 0 7.5 3 6 6C4.5 3 6 0 6 0Z' fill='%23BA2636' opacity='0.4' transform='rotate(144 6 6)'/%3E%3Cpath d='M6 0C6 0 7.5 3 6 6C4.5 3 6 0 6 0Z' fill='%23BA2636' opacity='0.4' transform='rotate(216 6 6)'/%3E%3Cpath d='M6 0C6 0 7.5 3 6 6C4.5 3 6 0 6 0Z' fill='%23BA2636' opacity='0.4' transform='rotate(288 6 6)'/%3E%3C/svg%3E");
+  background-size: contain;
+  animation: wafu-sakura-fall linear infinite;
+}
+
+[data-theme="wafu"] .wafu-sakura:nth-child(1) {
+  left: 15%;
+  animation-duration: 12s;
+  animation-delay: 0s;
+}
+
+[data-theme="wafu"] .wafu-sakura:nth-child(2) {
+  left: 55%;
+  animation-duration: 15s;
+  animation-delay: 4s;
+}
+
+[data-theme="wafu"] .wafu-sakura:nth-child(3) {
+  left: 80%;
+  animation-duration: 18s;
+  animation-delay: 8s;
+}
+
+/* アクセシビリティ: reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  [data-theme="wafu"] .wafu-shimmer::before {
+    display: none;
+  }
+
+  [data-theme="wafu"] .wafu-sakura {
+    display: none;
+  }
+
+  .theme-transitioning,
+  .theme-transitioning * {
+    transition-duration: 0s !important;
+  }
+}
+
+/* ===== 基本スタイル ===== */
+
 html {
   scroll-behavior: smooth;
 }
