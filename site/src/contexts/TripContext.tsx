@@ -2,8 +2,22 @@ import { createContext, useContext, useState, useCallback, useEffect } from 'rea
 import type { ReactNode } from 'react'
 import type { BudgetTier } from '../data/travel'
 import type { FoodSelections } from '../data/alternatives'
-import { loadTripSettings, saveTripSettings, clearTripSettings, DEFAULT_TRIP_SETTINGS } from '../lib/settings'
+import { loadTripSettings, saveTripSettings, clearTripSettings, DEFAULT_TRIP_SETTINGS, type TripSettings } from '../lib/settings'
 import { decodeShareUrl } from '../lib/share'
+
+/** URL hash > localStorage > 기본값 순서로 초기 설정을 결정한다. (동기, 첫 렌더 전) */
+function getInitialSettings(): TripSettings {
+  const hash = window.location.hash
+  if (hash) {
+    const fromUrl = decodeShareUrl(hash)
+    if (fromUrl) {
+      saveTripSettings(fromUrl)
+      history.replaceState(null, '', window.location.pathname + window.location.search)
+      return fromUrl
+    }
+  }
+  return loadTripSettings()
+}
 
 interface TripContextValue {
   // Trip settings
@@ -26,27 +40,12 @@ interface TripContextValue {
 const TripContext = createContext<TripContextValue | null>(null)
 
 export function TripProvider({ children }: { children: ReactNode }) {
-  const [osakaNights, setOsakaNights] = useState<number>(() => loadTripSettings().osakaNights)
-  const [usj, setUsj] = useState<boolean>(() => loadTripSettings().usj)
-  const [kyotoNights, setKyotoNights] = useState<number>(() => loadTripSettings().kyotoNights)
-  const [budgetTier, setBudgetTier] = useState<BudgetTier>(() => loadTripSettings().budgetTier)
-  const [foodSelections, setFoodSelections] = useState<FoodSelections>(() => loadTripSettings().foodSelections)
-
-  // URL hash 초기화: hash > localStorage > 기본값
-  useEffect(() => {
-    const hash = window.location.hash
-    if (!hash) return
-    const fromUrl = decodeShareUrl(hash)
-    if (!fromUrl) return
-
-    setOsakaNights(fromUrl.osakaNights)
-    setUsj(fromUrl.usj)
-    setKyotoNights(fromUrl.kyotoNights)
-    setBudgetTier(fromUrl.budgetTier)
-    setFoodSelections(fromUrl.foodSelections)
-    saveTripSettings(fromUrl)
-    history.replaceState(null, '', window.location.pathname + window.location.search)
-  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+  const [initial] = useState(getInitialSettings)
+  const [osakaNights, setOsakaNights] = useState(initial.osakaNights)
+  const [usj, setUsj] = useState(initial.usj)
+  const [kyotoNights, setKyotoNights] = useState(initial.kyotoNights)
+  const [budgetTier, setBudgetTier] = useState<BudgetTier>(initial.budgetTier)
+  const [foodSelections, setFoodSelections] = useState<FoodSelections>(initial.foodSelections)
 
   // Persist to localStorage on state change
   useEffect(() => {

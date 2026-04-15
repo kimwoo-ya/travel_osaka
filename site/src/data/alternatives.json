@@ -1,5 +1,35 @@
 {
   "alternatives": {
+    "K1:6": [
+      {
+        "food": "鍵善良房 四条本店 (3.78/1,790건)",
+        "mapQuery": "鍵善良房 四条本店 祇園",
+        "category": "화과자, 화과자, 카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26001887/"
+      },
+      {
+        "food": "ぎおん徳屋 (3.75/2,044건)",
+        "mapQuery": "ぎおん徳屋 祇園",
+        "category": "화과자, 화과자, 빙수",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26002075/"
+      },
+      {
+        "food": "フランソア喫茶室 (3.72/1,720건)",
+        "mapQuery": "フランソア喫茶室 祇園",
+        "category": "카페, 케이크",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260201/26000900/"
+      },
+      {
+        "food": "マリベル 京都本店 (3.71/919건)",
+        "mapQuery": "マリベル 京都本店 祇園",
+        "category": "초콜릿, 젤라토, 카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260202/26019937/"
+      }
+    ],
     "K2:7": [
       {
         "food": "麺屋 丈六 なんば店 (3.74/2,571건)",
@@ -30,6 +60,29 @@
         "category": "카레, 인도카레",
         "note": "～￥999",
         "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26000785/"
+      }
+    ],
+    "O1:3": [
+      {
+        "food": "Le Premier Cafe 心斎橋本店 (3.70/809건)",
+        "mapQuery": "Le Premier Cafe 心斎橋本店 心斎橋",
+        "category": "카페, 카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27004529/"
+      },
+      {
+        "food": "アラビヤコーヒー (3.67/980건)",
+        "mapQuery": "アラビヤコーヒー 心斎橋",
+        "category": "카페, 카페, 샌드위치",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001511/"
+      },
+      {
+        "food": "ちひろ菓子店 (3.65/467건)",
+        "mapQuery": "ちひろ菓子店 心斎橋",
+        "category": "양과자, 디저트",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27112367/"
       }
     ],
     "O1:4": [
@@ -115,6 +168,29 @@
         "category": "아시안, 카레, 다이닝바",
         "note": "￥1,000～￥1,999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27088604/"
+      }
+    ],
+    "O4:0": [
+      {
+        "food": "讃岐うどん 今雪 (3.72/1,085건)",
+        "mapQuery": "讃岐うどん 今雪 中崎町",
+        "category": "우동, 우동스키",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27067874/"
+      },
+      {
+        "food": "馬鹿坊 (3.70/944건)",
+        "mapQuery": "馬鹿坊 中崎町",
+        "category": "라멘, 사천요리, 중화",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27084317/"
+      },
+      {
+        "food": "大阪 松下 (3.67/538건)",
+        "mapQuery": "大阪 松下 中崎町",
+        "category": "소바",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27086760/"
       }
     ],
     "O4:1": [

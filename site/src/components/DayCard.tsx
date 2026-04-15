@@ -145,11 +145,10 @@ export default function DayCard({ day, index, tier }: DayCardProps) {
                               aria-expanded={isOpen}
                               aria-controls={`alt-panel-${accordionKey}`}
                               aria-label={isOpen ? '대안 목록 닫기' : '대안 목록 열기'}
-                              className="inline-flex items-center justify-center ml-1.5 w-6 h-6 min-w-[44px] min-h-[44px] -m-[9px] text-xs rounded transition-colors text-text-light hover:text-shu hover:bg-shu/5 focus-visible:outline-2 focus-visible:outline-shu"
+                              className="inline-flex items-center gap-0.5 ml-1.5 px-1.5 py-0.5 min-h-[44px] -my-[10px] text-[11px] font-medium rounded-full transition-colors bg-shu/10 text-shu hover:bg-shu/20 focus-visible:outline-2 focus-visible:outline-shu"
                             >
-                              <span aria-hidden="true" className={`inline-block transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>
-                                ▾
-                              </span>
+                              <span aria-hidden="true">다른 식당</span>
+                              <span aria-hidden="true" className={`inline-block transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▾</span>
                             </button>
                           )}
                         </>
