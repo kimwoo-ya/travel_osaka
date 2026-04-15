@@ -1,14 +1,7 @@
 import { motion, useReducedMotion } from 'framer-motion'
 import { calcBudget } from '../data/travel'
-import type { BudgetTier } from '../data/travel'
 import { useTheme } from '../contexts/ThemeContext'
-
-interface BudgetSectionProps {
-  osakaNights: number
-  usj: boolean
-  kyotoNights: number
-  activeTier: BudgetTier
-}
+import { useTripContext } from '../contexts/TripContext'
 
 function formatMan(won: number): string {
   const man = Math.round(won / 10000)
@@ -57,7 +50,8 @@ const tiers = [
   },
 ]
 
-export default function BudgetSection({ osakaNights, usj, kyotoNights, activeTier }: BudgetSectionProps) {
+export default function BudgetSection() {
+  const { osakaNights, usj, kyotoNights, budgetTier: activeTier } = useTripContext()
   const { theme } = useTheme()
   const isWafu = theme === 'wafu'
   const budget = calcBudget(osakaNights, usj, kyotoNights)

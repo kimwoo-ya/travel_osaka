@@ -1,18 +1,16 @@
-import { useState, useMemo } from 'react'
+import { useMemo } from 'react'
 import Hero from './components/Hero'
 import ControlBar from './components/ControlBar'
 import DayCard from './components/DayCard'
 import BudgetSection from './components/BudgetSection'
 import Footer from './components/Footer'
 import { ThemeProvider, useTheme } from './contexts/ThemeContext'
+import { TripProvider, useTripContext } from './contexts/TripContext'
 import { osakaDays, usjDay, kyotoDays } from './data/travel'
-import type { DayPlan, BudgetTier } from './data/travel'
+import type { DayPlan } from './data/travel'
 
 function AppContent() {
-  const [osakaNights, setOsakaNights] = useState(2)
-  const [usj, setUsj] = useState(false)
-  const [kyotoNights, setKyotoNights] = useState(0)
-  const [budgetTier, setBudgetTier] = useState<BudgetTier>('mid')
+  const { osakaNights, usj, kyotoNights, budgetTier } = useTripContext()
 
   const days: DayPlan[] = useMemo(() => {
     const osakaCount = osakaNights + 1
@@ -52,16 +50,7 @@ function AppContent() {
 
       <Hero />
 
-      <ControlBar
-        osakaNights={osakaNights}
-        setOsakaNights={setOsakaNights}
-        usj={usj}
-        setUsj={setUsj}
-        kyotoNights={kyotoNights}
-        setKyotoNights={setKyotoNights}
-        budgetTier={budgetTier}
-        setBudgetTier={setBudgetTier}
-      />
+      <ControlBar />
 
       <main>
         {/* Timeline */}
@@ -73,12 +62,7 @@ function AppContent() {
           </div>
         </section>
 
-        <BudgetSection
-          osakaNights={osakaNights}
-          usj={usj}
-          kyotoNights={kyotoNights}
-          activeTier={budgetTier}
-        />
+        <BudgetSection />
       </main>
 
       <Footer />
@@ -89,7 +73,9 @@ function AppContent() {
 function App() {
   return (
     <ThemeProvider>
-      <AppContent />
+      <TripProvider>
+        <AppContent />
+      </TripProvider>
     </ThemeProvider>
   )
 }

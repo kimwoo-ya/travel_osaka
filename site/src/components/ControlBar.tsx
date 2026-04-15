@@ -1,17 +1,9 @@
+import { useState } from 'react'
 import type { BudgetTier } from '../data/travel'
 import { dailyTotal } from '../data/travel'
 import { useTheme } from '../contexts/ThemeContext'
-
-interface ControlBarProps {
-  osakaNights: number
-  setOsakaNights: (n: number) => void
-  usj: boolean
-  setUsj: (b: boolean) => void
-  kyotoNights: number
-  setKyotoNights: (n: number) => void
-  budgetTier: BudgetTier
-  setBudgetTier: (t: BudgetTier) => void
-}
+import { useTripContext } from '../contexts/TripContext'
+import { encodeShareUrl } from '../lib/share'
 
 const kyotoOptions = [
   { value: 0, label: '없음' },
@@ -29,18 +21,11 @@ function formatMan(won: number): string {
   return `${Math.round(won / 10000)}만`
 }
 
-export default function ControlBar({
-  osakaNights,
-  setOsakaNights,
-  usj,
-  setUsj,
-  kyotoNights,
-  setKyotoNights,
-  budgetTier,
-  setBudgetTier,
-}: ControlBarProps) {
+export default function ControlBar() {
+  const { osakaNights, setOsakaNights, usj, setUsj, kyotoNights, setKyotoNights, budgetTier, setBudgetTier, foodSelections, resetAll } = useTripContext()
   const { theme, toggleTheme } = useTheme()
   const isWafu = theme === 'wafu'
+  const [copied, setCopied] = useState(false)
   const totalNights = osakaNights + (usj ? 1 : 0) + kyotoNights
   const totalDays = totalNights + 1
   const activeTier = tierOptions.find((t) => t.value === budgetTier)!
@@ -140,13 +125,52 @@ export default function ControlBar({
           </div>
 
           {/* 총 일정 + 일별 예산 + 테마 토글 */}
-          <div className="ml-auto text-right flex items-center gap-2 md:gap-3">
+          <div className="flex flex-1 justify-end items-center gap-2 md:gap-3">
             <span className="text-xs md:text-sm font-medium text-ai">
               <span className="font-bold text-shu">{totalNights}박{totalDays}일</span>
             </span>
             <span className="text-xs text-text-light">
               일 ₩{formatMan(activeTier.daily)}
             </span>
+
+            {/* 구분선 */}
+            <div className="w-px h-5 bg-border" />
+
+            {/* 공유 */}
+            <button
+              onClick={() => {
+                const url = encodeShareUrl({ osakaNights, usj, kyotoNights, budgetTier, foodSelections })
+                navigator.clipboard.writeText(url).then(() => {
+                  setCopied(true)
+                  setTimeout(() => setCopied(false), 2000)
+                }).catch((err) => {
+                  console.warn('[share] clipboard write failed:', err)
+                })
+              }}
+              aria-label="공유 링크 복사"
+              className={`flex items-center justify-center w-11 h-11 rounded-lg text-xs font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ai ${
+                copied
+                  ? 'bg-green-600 text-white'
+                  : isWafu
+                    ? 'bg-card text-ai border border-border hover:bg-card-hover'
+                    : 'bg-card text-text-light border border-border hover:bg-card-hover hover:text-ai'
+              }`}
+            >
+              <span aria-hidden="true">{copied ? '✓' : '🔗'}</span>
+            </button>
+
+            {/* 초기화 */}
+            <button
+              onClick={resetAll}
+              aria-label="설정 초기화"
+              className={`flex items-center justify-center w-11 h-11 rounded-lg text-xs font-medium transition-colors duration-200 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-ai ${
+                isWafu
+                  ? 'bg-card text-shu border border-border hover:bg-card-hover'
+                  : 'bg-card text-text-light border border-border hover:bg-card-hover hover:text-shu'
+              }`}
+            >
+              <span aria-hidden="true">↺</span>
+            </button>
 
             {/* 구분선 */}
             <div className="w-px h-5 bg-border" />

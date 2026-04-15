@@ -1,0 +1,203 @@
+{
+  "alternatives": {
+    "K2:7": [
+      {
+        "food": "麺屋 丈六 なんば店 (3.74/2,571건)",
+        "mapQuery": "麺屋 丈六 なんば店 난바",
+        "category": "라멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27084754/"
+      },
+      {
+        "food": "なにわ 麺次郎 (3.72/1,991건)",
+        "mapQuery": "なにわ 麺次郎 난바",
+        "category": "라멘, 츠케멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27112089/"
+      },
+      {
+        "food": "肉匠なか田 本店 (3.70/428건)",
+        "mapQuery": "肉匠なか田 本店 난바",
+        "category": "야키니쿠, 스테이크, 샤부샤부",
+        "note": "￥15,000～￥19,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001305/"
+      }
+    ],
+    "K3:8": [
+      {
+        "food": "スパイシーマサラ (3.49/549건)",
+        "mapQuery": "スパイシーマサラ 교토역",
+        "category": "카레, 인도카레",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26000785/"
+      }
+    ],
+    "O1:4": [
+      {
+        "food": "お好み焼 きじ 本店 (3.67/2,023건)",
+        "mapQuery": "お好み焼 きじ 本店 신우메다 쇼쿠도가이",
+        "category": "오코노미야키, 야키소바",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27000297/"
+      },
+      {
+        "food": "花くじら 本店 (3.67/1,343건)",
+        "mapQuery": "花くじら 本店 신우메다 쇼쿠도가이",
+        "category": "오뎅",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27001230/"
+      },
+      {
+        "food": "串かつ専門店 松葉 総本店 (3.49/1,356건)",
+        "mapQuery": "串かつ専門店 松葉 総本店 신우메다 쇼쿠도가이",
+        "category": "쿠시카츠, 타치노미",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27001927/"
+      }
+    ],
+    "O2:1": [
+      {
+        "food": "千とせ 本店 (3.72/2,145건)",
+        "mapQuery": "千とせ 本店 도톤보리",
+        "category": "우동, 소바",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27002763/"
+      },
+      {
+        "food": "道頓堀 今井 本店 (3.58/2,267건)",
+        "mapQuery": "道頓堀 今井 本店 도톤보리",
+        "category": "우동, 우동스키, 오야코동",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001289/"
+      },
+      {
+        "food": "ニューライト (3.49/1,023건)",
+        "mapQuery": "ニューライト 도톤보리",
+        "category": "정식, 양식, 카레",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001270/"
+      },
+      {
+        "food": "金龍ラーメン 道頓堀店 (3.49/1,002건)",
+        "mapQuery": "金龍ラーメン 道頓堀店 도톤보리",
+        "category": "라멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001495/"
+      }
+    ],
+    "O2:5": [
+      {
+        "food": "葉花 (3.63/544건)",
+        "mapQuery": "葉花 道頓堀",
+        "category": "타치노미, 이자카야",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27133979/"
+      },
+      {
+        "food": "KASUYA 法善寺店 (3.55/489건)",
+        "mapQuery": "KASUYA 法善寺店 도톤보리",
+        "category": "우동, 카레우동",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27045072/"
+      }
+    ],
+    "O3:3": [
+      {
+        "food": "純喫茶 アメリカン (3.66/1,696건)",
+        "mapQuery": "純喫茶 アメリカン 아메리카무라",
+        "category": "카페, 팬케이크, 샌드위치",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27005758/"
+      },
+      {
+        "food": "カオススパイスダイナー 四ツ橋アメリカ村店 (3.53/859건)",
+        "mapQuery": "カオススパイスダイナー 四ツ橋アメリカ村店 아메리카무라",
+        "category": "아시안, 카레, 다이닝바",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27088604/"
+      }
+    ],
+    "O4:1": [
+      {
+        "food": "BOTANI：CURRY 梅田店 (3.80/1,734건)",
+        "mapQuery": "BOTANI：CURRY 梅田店 우메다",
+        "category": "카레",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27125687/"
+      },
+      {
+        "food": "たけうちうどん店 (3.78/1,878건)",
+        "mapQuery": "たけうちうどん店 우메다",
+        "category": "우동, 튀김",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27006684/"
+      },
+      {
+        "food": "燃えよ麺助 (3.77/3,089건)",
+        "mapQuery": "燃えよ麺助 우메다",
+        "category": "라멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27091454/"
+      },
+      {
+        "food": "うどん棒 大阪本店 (3.77/2,714건)",
+        "mapQuery": "うどん棒 大阪本店 우메다",
+        "category": "우동, 텐푸라, 우동스키",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27003766/"
+      }
+    ],
+    "O4:6": [
+      {
+        "food": "ダテダチ (3.61/553건)",
+        "mapQuery": "ダテダチ 우라난바",
+        "category": "타치노미, 야키토리, 이자카야",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27130878/"
+      },
+      {
+        "food": "魚屋ひでぞう 立ち呑み店 (3.56/640건)",
+        "mapQuery": "魚屋ひでぞう 立ち呑み店 우라난바",
+        "category": "타치노미, 해산물, 사케바",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27070641/"
+      },
+      {
+        "food": "サカバダアレグロ (3.52/404건)",
+        "mapQuery": "サカバダアレグロ 우라난바",
+        "category": "이탈리안, 파스타, 이자카야",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27130460/"
+      },
+      {
+        "food": "ときすし 本店 (3.40/672건)",
+        "mapQuery": "ときすし 本店 우라난바",
+        "category": "스시, 해산물, 나베",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27015959/"
+      }
+    ]
+  },
+  "areaDistances": {
+    "도톤보리-난바": 5,
+    "도톤보리-우라난바": 5,
+    "도톤보리-신사이바시": 8,
+    "난바-우라난바": 3,
+    "난바-신사이바시": 7,
+    "아메리카무라-신사이바시": 5,
+    "아메리카무라-도톤보리": 8,
+    "우메다-후쿠시마": 8,
+    "우메다-나카자키쵸": 10,
+    "우메다-난바": 15,
+    "도톤보리-신세카이": 15,
+    "신세카이-텐노지": 5,
+    "난바-신세카이": 18,
+    "기온-히가시야마": 10,
+    "기온-가와라마치": 5,
+    "기온-난젠지": 15,
+    "가와라마치-교토역": 15,
+    "아라시야마-기온": 45,
+    "아라시야마-교토역": 30,
+    "교토역-기온": 20
+  }
+}
