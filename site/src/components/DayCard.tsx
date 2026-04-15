@@ -13,10 +13,10 @@ interface DayCardProps {
   tier: BudgetTier
 }
 
-function parseTabelog(text: string): { name: string; score: string; reviews: string } | null {
-  const match = text.match(/(.+?)\s*\((\d+\.\d+)\/([0-9,]+건[⚠️]*)\)/)
+function parseTabelog(text: string): { name: string; score: string; reviews: string; category?: string } | null {
+  const match = text.match(/(.+?)\s*\((\d+\.\d+)\/([0-9,]+건[⚠️]*)\)(?:\s*\[(.+?)\])?/)
   if (!match) return null
-  return { name: match[1].trim(), score: match[2], reviews: match[3] }
+  return { name: match[1].trim(), score: match[2], reviews: match[3], category: match[4] }
 }
 
 export default function DayCard({ day, index, tier }: DayCardProps) {
@@ -120,6 +120,9 @@ export default function DayCard({ day, index, tier }: DayCardProps) {
                                   ★{foodInfo.score}
                                   <span className="text-text-light">({foodInfo.reviews})</span>
                                 </span>
+                                {foodInfo.category && (
+                                  <span className="ml-1 text-[10px] text-text-light">[{foodInfo.category}]</span>
+                                )}
                               </a>
                             ) : (
                               <span className="text-shu">
@@ -128,6 +131,9 @@ export default function DayCard({ day, index, tier }: DayCardProps) {
                                   ★{foodInfo.score}
                                   <span className="text-text-light">({foodInfo.reviews})</span>
                                 </span>
+                                {foodInfo.category && (
+                                  <span className="ml-1 text-[10px] text-text-light">[{foodInfo.category}]</span>
+                                )}
                               </span>
                             )
                           ) : (
@@ -145,7 +151,7 @@ export default function DayCard({ day, index, tier }: DayCardProps) {
                               aria-expanded={isOpen}
                               aria-controls={`alt-panel-${accordionKey}`}
                               aria-label={isOpen ? '대안 목록 닫기' : '대안 목록 열기'}
-                              className="inline-flex items-center gap-0.5 ml-1.5 px-1.5 py-0.5 min-h-[44px] -my-[10px] text-[11px] font-medium rounded-full transition-colors bg-shu/10 text-shu hover:bg-shu/20 focus-visible:outline-2 focus-visible:outline-shu"
+                              className="relative inline-flex items-center gap-0.5 ml-1.5 px-1.5 py-0.5 text-[11px] font-medium rounded-full transition-colors bg-shu/10 text-shu hover:bg-shu/20 focus-visible:outline-2 focus-visible:outline-shu before:absolute before:inset-x-0 before:-inset-y-3 before:content-['']"
                             >
                               <span aria-hidden="true">다른 식당</span>
                               <span aria-hidden="true" className={`inline-block transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}>▾</span>
