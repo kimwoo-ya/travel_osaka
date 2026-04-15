@@ -106,7 +106,7 @@ export default function DayCard({ day, index, tier }: DayCardProps) {
                         <>
                           {slot.place && <span className="text-text-light mx-1">·</span>}
                           {foodInfo ? (
-                            foodMapQuery && !slot.place ? (
+                            foodMapQuery ? (
                               <a
                                 href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(foodMapQuery)}`}
                                 target="_blank"
