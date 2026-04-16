@@ -6,13 +6,16 @@ dist/
 
 # Dev tooling & working docs
 .specify/
-restaurant-search/
 specs/
 07_alt_restaurant_search_prompt.md
 _workspace/06_alt_restaurant_collection_guide.md
-.claude/skills/speckit-*/
-.claude/skills/feature-orchestrator/
-.claude/skills/implement-feature/
-.claude/skills/validate-feature/
-.claude/agents/react-implementer.md
-.claude/agents/qa-validator.md
+
+# Claude Code harness
+.claude/agents/
+.claude/skills/
+
+# Working documents
+_workspace/
+
+# Project management
+ROADMAP.md
