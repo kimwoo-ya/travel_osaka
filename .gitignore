@@ -3,12 +3,18 @@ dist/
 .DS_Store
 *.local
 *.csv
-
+results_*.json
+__pycache__/
+batch_results/
+results_batch/
 # Dev tooling & working docs
 .specify/
 specs/
 07_alt_restaurant_search_prompt.md
 _workspace/06_alt_restaurant_collection_guide.md
+
+# Nested repo
+tabelog_scrapper/
 
 # Claude Code harness
 .claude/agents/

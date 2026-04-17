@@ -1,0 +1,45 @@
+{
+  "osaka": [
+    { "name": "이마이 우동", "nameJa": "道頓堀 今井", "category": "우동", "area": "도톤보리", "tabelog": 3.58, "reviews": 2266, "price": "¥1,000~1,500", "reservation": "예약 추천", "recommended": "키츠네 우동 ¥930", "day": "O1" },
+    { "name": "하나다코", "nameJa": "はなだこ", "category": "타코야키", "area": "우메다", "tabelog": 3.68, "reviews": 2806, "price": "~¥1,000", "reservation": "테이크아웃", "recommended": "네기마요 ¥650", "day": "O1" },
+    { "name": "CENTRE M", "nameJa": "サントル エム", "category": "카페", "area": "니시신사이바시", "tabelog": 3.55, "reviews": 426, "price": "¥2,000~3,000", "reservation": "예약 추천", "recommended": "아프타눈티 세트", "day": "O1" },
+    { "name": "미츠노", "nameJa": "美津の", "category": "오코노미야키", "area": "도톤보리", "tabelog": 3.56, "reviews": 1628, "price": "¥1,000~2,000", "reservation": "워크인", "recommended": "야마이모야키 ¥1,150", "day": "O2" },
+    { "name": "다루마", "nameJa": "元祖串かつ だるま", "category": "쿠시카츠", "area": "신세카이", "tabelog": 3.46, "reviews": 1161, "price": "¥2,000~3,000", "reservation": "워크인", "recommended": "소고기 쿠시카츠", "day": "O2" },
+    { "name": "와나카", "nameJa": "わなか", "category": "타코야키", "area": "도톤보리", "tabelog": 3.49, "reviews": 793, "price": "~¥1,000", "reservation": "테이크아웃", "recommended": "오오이리 4종 세트 ¥750", "day": "O2" },
+    { "name": "코가류", "nameJa": "甲賀流", "category": "타코야키", "area": "아메리카무라", "tabelog": 3.46, "reviews": 1403, "price": "~¥1,000", "reservation": "테이크아웃", "recommended": "소스마요 ¥600", "day": "O3" },
+    { "name": "히데조 스시", "nameJa": "鮨 ひでぞう", "category": "스시", "area": "난바", "tabelog": 3.64, "reviews": 399, "price": "¥3,000~4,000", "reservation": "예약 추천", "recommended": "제철 네타", "day": "O3", "warning": true },
+    { "name": "hannoc", "nameJa": "ハノック", "category": "카페/케이크", "area": "나카자키쵸", "tabelog": 3.61, "reviews": 800, "price": "¥1,000~2,000", "reservation": "워크인", "recommended": "시즌 프루츠 타르트", "day": "O4" },
+    { "name": "밀향야", "nameJa": "蜜香屋", "category": "디저트/카페", "area": "나카자키쵸", "tabelog": 3.55, "reviews": 393, "price": "~¥1,000", "reservation": "워크인", "recommended": "야키이모, 고구마 파르페", "day": "O4", "warning": true },
+    { "name": "키지 본점", "nameJa": "お好み焼 きじ", "category": "오코노미야키", "area": "우메다", "tabelog": 3.67, "reviews": 2022, "price": "¥1,500~3,000", "reservation": "워크인", "recommended": "모단야키 ¥950", "day": "O4" },
+    { "name": "산쿠 라멘", "nameJa": "麺香房 三く", "category": "라멘", "area": "후쿠시마", "tabelog": 3.75, "reviews": 2518, "price": "¥1,000~1,500", "reservation": "워크인", "recommended": "니쿠카케 ¥1,200", "day": "O4" },
+    { "name": "후쿠타로", "nameJa": "福太郎", "category": "오코노미야키", "area": "우라난바", "tabelog": 3.72, "reviews": 2521, "price": "¥2,000~3,000", "reservation": "워크인", "recommended": "넨리키야키 ¥1,300", "day": "O4" },
+    { "name": "야에카츠", "nameJa": "八重勝", "category": "쿠시카츠", "area": "신세카이", "tabelog": 3.50, "reviews": 1956, "price": "¥2,000~4,000", "reservation": "워크인", "recommended": "규헤레(소 안심)", "day": "O5" },
+    { "name": "야키니쿠 키탄", "nameJa": "焼肉 きたん 法善寺", "category": "야키니쿠", "area": "호젠지", "tabelog": 3.60, "reviews": 571, "price": "¥8,000~10,000", "reservation": "예약 추천", "recommended": "호젠지 코스 12품", "day": "O5" },
+    { "name": "Dining 아지토", "nameJa": "DININGあじと", "category": "이자카야", "area": "우라난바", "tabelog": 3.51, "reviews": 515, "price": "¥2,000~4,000", "reservation": "예약 추천", "recommended": "로스트비프, 지역 사케", "day": "O6" }
+  ],
+  "kyoto": [
+    { "name": "준세이 유도후", "nameJa": "南禅寺 順正", "category": "유도후", "area": "난젠지", "tabelog": 3.53, "reviews": 767, "price": "¥3,300~5,500", "reservation": "예약 추천", "recommended": "하나 코스 ¥3,630", "day": "K1" },
+    { "name": "사료 츠지리", "nameJa": "茶寮都路里", "category": "말차 디저트", "area": "기온", "tabelog": 3.55, "reviews": 1058, "price": "¥1,400~1,700", "reservation": "워크인", "recommended": "특선 츠지리 파르페 ¥1,694", "day": "K1" },
+    { "name": "이카리야 식당", "nameJa": "イカリヤ食堂", "category": "비스트로/가와도코", "area": "가와라마치", "tabelog": 3.59, "reviews": 186, "price": "¥3,000~4,000", "reservation": "예약 필수", "recommended": "런치 코스, 가와도코 디너", "day": "K1", "warning": true },
+    { "name": "% 아라비카", "nameJa": "アラビカ京都 嵐山", "category": "카페", "area": "아라시야마", "tabelog": 3.58, "reviews": 509, "price": "~¥1,000", "reservation": "테이크아웃", "recommended": "카페 라떼 ¥550", "day": "K2" },
+    { "name": "요시무라 소바", "nameJa": "嵐山よしむら", "category": "소바", "area": "아라시야마", "tabelog": 3.51, "reviews": 985, "price": "¥1,000~2,000", "reservation": "워크인", "recommended": "도게츠젠(소바+텐동) ¥1,500", "day": "K2" },
+    { "name": "오쿠도한", "nameJa": "みます屋 おくどはん", "category": "오반자이", "area": "가와라마치", "tabelog": 3.47, "reviews": 447, "price": "~¥1,500", "reservation": "예약 추천", "recommended": "오쿠도한 고젠 ¥1,360", "day": "K3" },
+    { "name": "기온 코모리", "nameJa": "ぎをん 小森", "category": "감미처", "area": "기온", "tabelog": 3.67, "reviews": 1458, "price": "¥1,000~2,000", "reservation": "워크인", "recommended": "와라비모찌 파르페", "day": "K3" },
+    { "name": "야마모토만보", "nameJa": "山本まんぼ", "category": "오코노미야키", "area": "교토역", "tabelog": 3.69, "reviews": 1285, "price": "¥1,000~2,000", "reservation": "워크인", "recommended": "만보야키 스페셜 ¥1,200", "day": "K3" },
+    { "name": "다이이치아사히", "nameJa": "本家 第一旭", "category": "라멘", "area": "교토역", "tabelog": 3.77, "reviews": 6672, "price": "~¥1,000", "reservation": "워크인", "recommended": "특제 라멘 ¥950", "day": "K3" }
+  ],
+  "streetFood": {
+    "osaka": [
+      { "name": "타코야키", "price": "¥500~700", "where": "와나카, 코가류, 하나다코" },
+      { "name": "551 호라이 돼지만두", "price": "¥230(2개)", "where": "난바역, 우메다역" },
+      { "name": "리쿠로 치즈케이크", "price": "¥965(1호)", "where": "난바 본점" },
+      { "name": "츠리가네 만쥬", "price": "¥179", "where": "신세카이" }
+    ],
+    "kyoto": [
+      { "name": "다시마키 타마고", "price": "~¥500", "where": "니시키 시장" },
+      { "name": "두유 미니 도넛", "price": "~¥300", "where": "니시키 시장" },
+      { "name": "말차 퐁뒤 당고", "price": "~¥600", "where": "니시키 시장" },
+      { "name": "와규 고로케", "price": "~¥300", "where": "니시키 시장" }
+    ]
+  }
+}
