@@ -1,5 +1,35 @@
 {
   "alternatives": {
+    "K1:3": [
+      {
+        "food": "京都祇園 おかる (3.59/1,336건)",
+        "mapQuery": "京都祇園 おかる 祇園",
+        "category": "우동, 소바, 食堂",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26001282/"
+      },
+      {
+        "food": "権太呂 岡崎店 (3.46/289건)",
+        "mapQuery": "権太呂 岡崎店 南禅寺",
+        "category": "우동스키, 소바, 일식",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26000917/"
+      },
+      {
+        "food": "篠田屋 (3.49/678건)",
+        "mapQuery": "篠田屋 南禅寺",
+        "category": "食堂, 소바, 라멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26007082/"
+      },
+      {
+        "food": "亀甲屋 (3.51/286건)",
+        "mapQuery": "亀甲屋 南禅寺",
+        "category": "일식, 豆腐料理, 샤부샤부",
+        "note": "￥5,000～￥5,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260202/26003318/"
+      }
+    ],
     "K1:6": [
       {
         "food": "鍵善良房 四条本店 (3.78/1,790건)",
@@ -30,27 +60,184 @@
         "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260202/26019937/"
       }
     ],
-    "K2:7": [
+    "K1:8": [
       {
-        "food": "麺屋 丈六 なんば店 (3.74/2,571건)",
-        "mapQuery": "麺屋 丈六 なんば店 난바",
-        "category": "라멘",
-        "note": "～￥999",
-        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27084754/"
+        "food": "Bar K6 (3.71/340건)",
+        "mapQuery": "Bar K6 先斗町",
+        "category": "バー, 다이닝바",
+        "note": "￥4,000～￥4,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260202/26001197/"
       },
       {
-        "food": "なにわ 麺次郎 (3.72/1,991건)",
-        "mapQuery": "なにわ 麺次郎 난바",
-        "category": "라멘, 츠케멘",
-        "note": "～￥999",
-        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27112089/"
+        "food": "神馬 (3.66/353건)",
+        "mapQuery": "神馬 先斗町",
+        "category": "이자카야, 郷土料理",
+        "note": "￥8,000～￥9,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260203/26002592/"
       },
       {
-        "food": "肉匠なか田 本店 (3.70/428건)",
-        "mapQuery": "肉匠なか田 本店 난바",
-        "category": "야키니쿠, 스테이크, 샤부샤부",
-        "note": "￥15,000～￥19,999",
-        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001305/"
+        "food": "へんこつ (3.61/679건)",
+        "mapQuery": "へんこつ 先斗町",
+        "category": "이자카야, 牛料理, 오뎅",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26000797/"
+      },
+      {
+        "food": "うしのほね 本店 (3.46/341건)",
+        "mapQuery": "うしのほね 本店 先斗町",
+        "category": "이자카야, 일식",
+        "note": "￥5,000～￥5,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260201/26001079/"
+      }
+    ],
+    "K2:3": [
+      {
+        "food": "パンとエスプレッソと嵐山庭園 (3.40/608건)",
+        "mapQuery": "パンとエスプレッソと嵐山庭園 嵐山",
+        "category": "카페, 빵, 디저트",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26032681/"
+      },
+      {
+        "food": "茶寮 八翠 (3.52/281건)",
+        "mapQuery": "茶寮 八翠 嵐山",
+        "category": "카페, 감미처, 디저트",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26025347/"
+      },
+      {
+        "food": "儘 (3.57/523건)",
+        "mapQuery": "儘 嵐山",
+        "category": "피자, 이탈리안, 카페",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26035295/"
+      },
+      {
+        "food": "イクスカフェ 京都嵐山本店 (3.53/708건)",
+        "mapQuery": "イクスカフェ 京都嵐山本店 嵐山",
+        "category": "카페, 감미처",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26005251/"
+      }
+    ],
+    "K2:4": [
+      {
+        "food": "五穀豊穣のお茶屋ごはん五木茶屋 嵐山本店 (3.44/272건)",
+        "mapQuery": "五穀豊穣のお茶屋ごはん五木茶屋 嵐山本店 嵐山",
+        "category": "일식, 丼, 감미처",
+        "note": "￥4,000～￥4,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26025547/"
+      },
+      {
+        "food": "アラビカ京都 嵐山 (3.58/560건)",
+        "mapQuery": "アラビカ京都 嵐山 嵐山",
+        "category": "コーヒースタンド",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26025913/"
+      },
+      {
+        "food": "松籟庵 (3.59/350건)",
+        "mapQuery": "松籟庵 嵐山",
+        "category": "일식, 豆腐料理",
+        "note": "￥5,000～￥5,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26003826/"
+      },
+      {
+        "food": "嵐山さくら餅 稲 (3.54/309건)",
+        "mapQuery": "嵐山さくら餅 稲 嵐山",
+        "category": "감미처, 화과자, 젤라토",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260403/26001306/"
+      }
+    ],
+    "K2:8": [
+      {
+        "food": "花丸軒 難波・法善寺店 (3.50/570건)",
+        "mapQuery": "花丸軒 難波・法善寺店 難波",
+        "category": "라멘, 교자, 이자카야",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27002618/"
+      },
+      {
+        "food": "尾道 むらかみ (3.52/397건)",
+        "mapQuery": "尾道 むらかみ 難波",
+        "category": "오코노미야키, 이자카야, レストラン",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27004637/"
+      },
+      {
+        "food": "中華そば　ふじい 難波千日前店 (3.59/1,353건)",
+        "mapQuery": "中華そば　ふじい 難波千日前店 難波",
+        "category": "라멘, 교자",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27072346/"
+      },
+      {
+        "food": "うどん居酒屋 江戸堀 (3.65/613건)",
+        "mapQuery": "うどん居酒屋 江戸堀 難波",
+        "category": "우동, 이자카야, 나베",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270102/27094721/"
+      }
+    ],
+    "K3:5": [
+      {
+        "food": "祇園肉亭 新 (3.57/289건)",
+        "mapQuery": "祇園肉亭 新 祇園",
+        "category": "牛料理, 일식",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26033192/"
+      },
+      {
+        "food": "京都祇園うなぎ四代目菊川 (3.57/214건)",
+        "mapQuery": "京都祇園うなぎ四代目菊川 祇園",
+        "category": "うなぎ, 일식",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260201/26039727/"
+      },
+      {
+        "food": "鮨 天ぷら 祇園いわい (3.38/268건)",
+        "mapQuery": "鮨 天ぷら 祇園いわい 祇園",
+        "category": "스시, 일식, 해산물",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26039518/"
+      },
+      {
+        "food": "祇園きなな 本店 (3.69/1,138건)",
+        "mapQuery": "祇園きなな 本店 祇園",
+        "category": "감미처, 젤라토, アイスクリーム",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26002500/"
+      }
+    ],
+    "K3:6": [
+      {
+        "food": "家傳京飴 祇園小石 祇園本店 (3.56/344건)",
+        "mapQuery": "家傳京飴 祇園小石 祇園本店 祇園",
+        "category": "화과자, 빙수, 카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26006689/"
+      },
+      {
+        "food": "祇園 北川半兵衞 (3.49/240건)",
+        "mapQuery": "祇園 北川半兵衞 祇園",
+        "category": "카페, 디저트",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26030209/"
+      },
+      {
+        "food": "祇園辻利 京都駅八条口店 (3.44/370건)",
+        "mapQuery": "祇園辻利 京都駅八条口店 祇園",
+        "category": "화과자, 카페, ソフトクリーム",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26006502/"
+      },
+      {
+        "food": "祇園辻利 祇園本店 (3.43/428건)",
+        "mapQuery": "祇園辻利 祇園本店 祇園",
+        "category": "카페, 화과자, ソフトクリーム",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260301/26013361/"
       }
     ],
     "K3:8": [
@@ -60,6 +247,57 @@
         "category": "카레, 인도카레",
         "note": "～￥999",
         "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26000785/"
+      },
+      {
+        "food": "麺匠たか松 京都駅ビル拉麺小路店 (3.55/630건)",
+        "mapQuery": "麺匠たか松 京都駅ビル拉麺小路店 京都駅",
+        "category": "라멘, 츠케멘, 麺類",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26035538/"
+      },
+      {
+        "food": "原了郭 京都駅 八条口店 (3.46/301건)",
+        "mapQuery": "原了郭 京都駅 八条口店 京都駅",
+        "category": "우동, 카레, 라멘",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26026055/"
+      },
+      {
+        "food": "麺家いろは 京都駅ビル店 (3.42/478건)",
+        "mapQuery": "麺家いろは 京都駅ビル店 京都駅",
+        "category": "라멘, 츠케멘, 교자",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/kyoto/A2601/A260101/26010280/"
+      }
+    ],
+    "O1:1": [
+      {
+        "food": "千とせ 本店 (3.72/2,146건)",
+        "mapQuery": "千とせ 本店 難波",
+        "category": "우동, 소바",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27002763/"
+      },
+      {
+        "food": "なんばうどん (3.48/457건)",
+        "mapQuery": "なんばうどん 難波",
+        "category": "우동, 소바, カレーうどん",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27023975/"
+      },
+      {
+        "food": "うどん居酒屋 江戸堀 (3.65/613건)",
+        "mapQuery": "うどん居酒屋 江戸堀 難波",
+        "category": "우동, 이자카야, 나베",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270102/27094721/"
+      },
+      {
+        "food": "麺屋 のスたOSAKA 難波千日前店 (3.55/850건)",
+        "mapQuery": "麺屋 のスたOSAKA 難波千日前店 難波",
+        "category": "라멘, 츠케멘",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27059770/"
       }
     ],
     "O1:3": [
@@ -83,6 +321,13 @@
         "category": "양과자, 디저트",
         "note": "￥1,000～￥1,999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27112367/"
+      },
+      {
+        "food": "ダンケ 心斎橋 (3.70/689건)",
+        "mapQuery": "ダンケ 心斎橋 心斎橋",
+        "category": "카페, 洋菓子",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27053278/"
       }
     ],
     "O1:4": [
@@ -106,6 +351,36 @@
         "category": "쿠시카츠, 타치노미",
         "note": "￥1,000～￥1,999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27001927/"
+      },
+      {
+        "food": "梅田 ミックスジュース 本店 (3.75/2,287건)",
+        "mapQuery": "梅田 ミックスジュース 本店 梅田",
+        "category": "ジューススタンド",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27013772/"
+      }
+    ],
+    "O2:0": [
+      {
+        "food": "まぐろ屋 黒銀 (구로몬시장 참치 전문)",
+        "mapQuery": "まぐろ屋 黒銀 黒門市場",
+        "category": "해산물, 사시미",
+        "note": "참치 사시미 ¥500~2,000",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "黒門三平 (구로몬시장 해산물)",
+        "mapQuery": "黒門三平 黒門市場",
+        "category": "해산물, 해산물덮밥",
+        "note": "성게·새우·가리비 ¥300~1,500",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "石橋食品 (구로몬시장 과일)",
+        "mapQuery": "石橋食品 黒門市場",
+        "category": "과일, 디저트",
+        "note": "제철 과일 컵 ¥300~800",
+        "tabelogUrl": ""
       }
     ],
     "O2:1": [
@@ -138,6 +413,29 @@
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001495/"
       }
     ],
+    "O2:3": [
+      {
+        "food": "新世界おやじの串や 新世界本店 (3.47/468건)",
+        "mapQuery": "新世界おやじの串や 新世界本店 新世界",
+        "category": "串揚げ, 이자카야, 일식",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27004862/"
+      },
+      {
+        "food": "日本一の串かつ 横綱 新世界本館 (3.37/290건)",
+        "mapQuery": "日本一の串かつ 横綱 新世界本館 新世界",
+        "category": "串揚げ, 이자카야, ちゃんこ鍋",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27008417/"
+      },
+      {
+        "food": "新世界 かんかん (3.52/807건)",
+        "mapQuery": "新世界 かんかん 新世界",
+        "category": "타코야키",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27011377/"
+      }
+    ],
     "O2:5": [
       {
         "food": "葉花 (3.63/544건)",
@@ -152,6 +450,43 @@
         "category": "우동, 카레우동",
         "note": "～￥999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27045072/"
+      },
+      {
+        "food": "ダテダチ (3.61/558건)",
+        "mapQuery": "ダテダチ 難波",
+        "category": "타치노미, 焼き鳥, 이자카야",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27130878/"
+      },
+      {
+        "food": "あっちち本舗 道頓堀店 (3.49/776건)",
+        "mapQuery": "あっちち本舗 道頓堀店 道頓堀",
+        "category": "타코야키, 이자카야, 오코노미야키",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27051667/"
+      }
+    ],
+    "O3:1": [
+      {
+        "food": "なにわ食いしんぼ横丁 (덴포잔 푸드코트)",
+        "mapQuery": "なにわ食いしんぼ横丁 天保山",
+        "category": "푸드코트, 오사카 명물",
+        "note": "오코노미야키·타코야키·쿠시카츠 ¥500~1,500",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "北極星 天保山店 (오므라이스 원조)",
+        "mapQuery": "北極星 天保山マーケットプレース",
+        "category": "양식, 오므라이스",
+        "note": "원조 오므라이스 ¥900~1,200",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "自由軒 天保山店 (카레)",
+        "mapQuery": "自由軒 天保山マーケットプレース",
+        "category": "카레, 양식",
+        "note": "명물 혼합 카레 ¥750",
+        "tabelogUrl": ""
       }
     ],
     "O3:3": [
@@ -168,6 +503,50 @@
         "category": "아시안, 카레, 다이닝바",
         "note": "￥1,000～￥1,999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27088604/"
+      },
+      {
+        "food": "Le Premier Cafe 心斎橋本店 (3.70/812건)",
+        "mapQuery": "Le Premier Cafe 心斎橋本店 心斎橋",
+        "category": "카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27004529/"
+      },
+      {
+        "food": "ダンケ 心斎橋 (3.70/689건)",
+        "mapQuery": "ダンケ 心斎橋 心斎橋",
+        "category": "카페, 洋菓子",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270201/27053278/"
+      }
+    ],
+    "O3:5": [
+      {
+        "food": "魚屋ひでぞう 難波店 (3.51/400건)",
+        "mapQuery": "魚屋ひでぞう 難波店 難波",
+        "category": "이자카야, 해산물, 스시",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27080293/"
+      },
+      {
+        "food": "裏なんばサカナエビス 難波千日前 (3.42/333건)",
+        "mapQuery": "裏なんばサカナエビス 難波千日前 難波",
+        "category": "이자카야, 스시, 해산물",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27126671/"
+      },
+      {
+        "food": "新川にしや (3.59/509건)",
+        "mapQuery": "新川にしや 難波",
+        "category": "해산물, 日本酒バー, 이자카야",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27018325/"
+      },
+      {
+        "food": "難波 ちょうつがひ (3.46/325건)",
+        "mapQuery": "難波 ちょうつがひ 難波",
+        "category": "일식, 스시, 이자카야",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27142384/"
       }
     ],
     "O4:0": [
@@ -191,6 +570,13 @@
         "category": "소바",
         "note": "～￥999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27086760/"
+      },
+      {
+        "food": "neel 中崎町店 (3.50/222건)",
+        "mapQuery": "neel 中崎町店 中崎町",
+        "category": "카페",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27135847/"
       }
     ],
     "O4:1": [
@@ -223,6 +609,59 @@
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270101/27003766/"
       }
     ],
+    "O4:2": [
+      {
+        "food": "みつ星製麺所 福島本店 (3.66/1,126건)",
+        "mapQuery": "みつ星製麺所 福島本店 福島",
+        "category": "라멘, 츠케멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27057392/"
+      },
+      {
+        "food": "まんかい 福島本家 (3.58/566건)",
+        "mapQuery": "まんかい 福島本家 福島",
+        "category": "라멘",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27075486/"
+      },
+      {
+        "food": "福島 はーばーど (3.47/370건)",
+        "mapQuery": "福島 はーばーど 福島",
+        "category": "鳥料理, 이자카야, 오뎅",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27135136/"
+      },
+      {
+        "food": "福島金魚 (3.46/370건)",
+        "mapQuery": "福島金魚 福島",
+        "category": "이자카야, 스테이크, 일식",
+        "note": "￥3,000～￥3,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270108/27008817/"
+      }
+    ],
+    "O4:4": [
+      {
+        "food": "夫婦善哉 (메오토젠자이 원조)",
+        "mapQuery": "夫婦善哉 法善寺横丁",
+        "category": "감미처, 젠자이",
+        "note": "2그릇 1세트 커플 기원 ¥800",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "法善寺 水掛茶屋 (호젠지 찻집)",
+        "mapQuery": "水掛茶屋 法善寺横丁",
+        "category": "감미처, 일식",
+        "note": "말차·미츠마메 ¥500~800",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "法善寺横丁 おかる (우동)",
+        "mapQuery": "おかる 法善寺横丁",
+        "category": "우동, 오코노미야키",
+        "note": "카레우동 명물 ¥900",
+        "tabelogUrl": ""
+      }
+    ],
     "O4:6": [
       {
         "food": "ダテダチ (3.61/553건)",
@@ -251,6 +690,119 @@
         "category": "스시, 해산물, 나베",
         "note": "￥1,000～￥1,999",
         "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27015959/"
+      }
+    ],
+    "O5:2": [
+      {
+        "food": "元祖串かつ だるま 新世界総本店 (3.46/1,161건)",
+        "mapQuery": "元祖串かつ だるま 新世界総本店 新世界",
+        "category": "串揚げ, 이자카야, 일식",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27004260/"
+      },
+      {
+        "food": "新世界おやじの串や 新世界本店 (3.47/468건)",
+        "mapQuery": "新世界おやじの串や 新世界本店 新世界",
+        "category": "串揚げ, 이자카야, 일식",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27004862/"
+      },
+      {
+        "food": "串カツさくら 南海難波店 (3.46/307건)",
+        "mapQuery": "串カツさくら 南海難波店 難波",
+        "category": "串揚げ, 이자카야, 創作料理",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27064322/"
+      },
+      {
+        "food": "大阪新世界元祖串かつ だるま 動物園前店 (3.37/420건)",
+        "mapQuery": "大阪新世界元祖串かつ だるま 動物園前店 新世界",
+        "category": "串揚げ, 이자카야, 일식",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270206/27083941/"
+      }
+    ],
+    "O5:4": [
+      {
+        "food": "肉タレ屋 難波バル店 (3.45/402건)",
+        "mapQuery": "肉タレ屋 難波バル店 難波",
+        "category": "바, 야키니쿠, 이자카야",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27087573/"
+      },
+      {
+        "food": "源兵衛 なんば店 (3.61/397건)",
+        "mapQuery": "源兵衛 なんば店 難波",
+        "category": "스테이크, 이자카야",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27108460/"
+      },
+      {
+        "food": "マロリーポークステーキ 難波店 (3.38/546건)",
+        "mapQuery": "マロリーポークステーキ 難波店 難波",
+        "category": "스테이크, 豚料理",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27131824/"
+      },
+      {
+        "food": "千とせ 本店 (3.72/2,146건)",
+        "mapQuery": "千とせ 本店 難波",
+        "category": "우동, 소바",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27002763/"
+      }
+    ],
+    "O6:2": [
+      {
+        "food": "志津香 公園店 (나라 가마메시)",
+        "mapQuery": "志津香 公園店 奈良",
+        "category": "가마메시, 일식",
+        "note": "나라 명물 가마메시 ¥1,200~",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "柿の葉ずし 平宗 (나라 명물 스시)",
+        "mapQuery": "柿の葉ずし 平宗 奈良",
+        "category": "스시, 향토요리",
+        "note": "감잎 스시 ¥800~1,200",
+        "tabelogUrl": ""
+      },
+      {
+        "food": "吉野本葛 天極堂 奈良本店 (쿠즈모찌)",
+        "mapQuery": "天極堂 奈良本店",
+        "category": "감미처, 화과자",
+        "note": "나라 명물 쿠즈모찌 ¥900",
+        "tabelogUrl": ""
+      }
+    ],
+    "O6:5": [
+      {
+        "food": "ダテダチ (3.61/558건)",
+        "mapQuery": "ダテダチ 難波",
+        "category": "타치노미, 焼き鳥, 이자카야",
+        "note": "￥2,000～￥2,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27130878/"
+      },
+      {
+        "food": "難波 ちょうつがひ (3.46/325건)",
+        "mapQuery": "難波 ちょうつがひ 難波",
+        "category": "일식, 스시, 이자카야",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27142384/"
+      },
+      {
+        "food": "うどん居酒屋 江戸堀 (3.65/613건)",
+        "mapQuery": "うどん居酒屋 江戸堀 難波",
+        "category": "우동, 이자카야, 나베",
+        "note": "～￥999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270102/27094721/"
+      },
+      {
+        "food": "大黒 (3.65/597건)",
+        "mapQuery": "大黒 難波",
+        "category": "食堂, 일식, 郷土料理",
+        "note": "￥1,000～￥1,999",
+        "tabelogUrl": "https://tabelog.com/osaka/A2701/A270202/27001293/"
       }
     ]
   },

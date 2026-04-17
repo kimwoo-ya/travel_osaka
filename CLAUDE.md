@@ -34,3 +34,10 @@
 
 1. **답변 적합성 재확인**: 사용자가 실제로 물어본 것에 정확히 답변했는지 되짚는다. 질문을 재해석하거나 빠뜨린 부분이 없는지 확인한다.
 2. **ROADMAP.md 업데이트**: 작업 내역이 있으면 `ROADMAP.md`에 반영한다. 완료 항목 체크, 새 결정사항 추가, 변경된 요구사항 갱신 등.
+
+## Active Technologies
+- Python 3.10+ + requests, beautifulsoup4, tabulate (신규) (002-tabelog-search-v2)
+- 파일 기반 (CSV, JSON) (002-tabelog-search-v2)
+
+## Recent Changes
+- 002-tabelog-search-v2: Added Python 3.10+ + requests, beautifulsoup4, tabulate (신규)
