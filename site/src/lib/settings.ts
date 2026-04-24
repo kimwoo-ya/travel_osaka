@@ -1,5 +1,6 @@
 import type { BudgetTier } from '../data/travel'
 import type { FoodSelections } from '../data/alternatives'
+import type { ConfirmedItinerary } from '../data/confirmed-types'
 
 // ─── Types ───
 
@@ -26,6 +27,7 @@ export const DEFAULT_TRIP_SETTINGS: TripSettings = {
 }
 
 const STORAGE_KEY = 'travel-trip-settings'
+const CONFIRMED_STORAGE_KEY = 'travel-confirmed-itinerary'
 const CURRENT_VERSION = 1
 
 // ─── Functions ───
@@ -60,6 +62,34 @@ export function loadTripSettings(): TripSettings {
 export function clearTripSettings(): void {
   try {
     localStorage.removeItem(STORAGE_KEY)
+  } catch {
+    // localStorage unavailable
+  }
+}
+
+// ─── Confirmed Itinerary ───
+
+export function saveConfirmedItinerary(data: ConfirmedItinerary): void {
+  try {
+    localStorage.setItem(CONFIRMED_STORAGE_KEY, JSON.stringify(data))
+  } catch {
+    // localStorage unavailable or quota exceeded
+  }
+}
+
+export function loadConfirmedItinerary(): ConfirmedItinerary | null {
+  try {
+    const raw = localStorage.getItem(CONFIRMED_STORAGE_KEY)
+    if (!raw) return null
+    return JSON.parse(raw) as ConfirmedItinerary
+  } catch {
+    return null
+  }
+}
+
+export function clearConfirmedItinerary(): void {
+  try {
+    localStorage.removeItem(CONFIRMED_STORAGE_KEY)
   } catch {
     // localStorage unavailable
   }

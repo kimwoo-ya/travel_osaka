@@ -2,6 +2,7 @@ import { useMemo } from 'react'
 import Hero from './components/Hero'
 import ControlBar from './components/ControlBar'
 import DayCard from './components/DayCard'
+import ConfirmedDayCard from './components/ConfirmedDayCard'
 import BudgetSection from './components/BudgetSection'
 import Footer from './components/Footer'
 import { ThemeProvider, useTheme } from './contexts/ThemeContext'
@@ -10,7 +11,7 @@ import { osakaDays, usjDay, kyotoDays } from './data/travel'
 import type { DayPlan } from './data/travel'
 
 function AppContent() {
-  const { osakaNights, usj, kyotoNights, budgetTier } = useTripContext()
+  const { mode, confirmedData, osakaNights, usj, kyotoNights, budgetTier } = useTripContext()
 
   const days: DayPlan[] = useMemo(() => {
     const osakaCount = osakaNights + 1
@@ -53,16 +54,27 @@ function AppContent() {
       <ControlBar />
 
       <main>
-        {/* Timeline */}
-        <section className="py-10 px-4">
-          <div className="max-w-3xl mx-auto space-y-5">
-            {days.map((day, i) => (
-              <DayCard key={day.id} day={day} index={i} tier={budgetTier} />
-            ))}
-          </div>
-        </section>
+        {mode === 'confirmed' && confirmedData ? (
+          <section className="py-10 px-4">
+            <div className="max-w-3xl mx-auto space-y-5">
+              {confirmedData.days.map((day, i) => (
+                <ConfirmedDayCard key={day.date} day={day} index={i} />
+              ))}
+            </div>
+          </section>
+        ) : (
+          <>
+            <section className="py-10 px-4">
+              <div className="max-w-3xl mx-auto space-y-5">
+                {days.map((day, i) => (
+                  <DayCard key={day.id} day={day} index={i} tier={budgetTier} />
+                ))}
+              </div>
+            </section>
 
-        <BudgetSection />
+            <BudgetSection />
+          </>
+        )}
       </main>
 
       <Footer />

@@ -1,6 +1,9 @@
 import type { TripSettings } from './settings'
 import type { BudgetTier } from '../data/travel'
+import type { ConfirmedItinerary } from '../data/confirmed-types'
 import { DEFAULT_TRIP_SETTINGS } from './settings'
+import { compressItinerary, decompressItinerary } from './compress'
+import { validateItinerary } from './validate'
 
 // ─── Encode ───
 
@@ -92,6 +95,33 @@ export function decodeShareUrl(hash: string): TripSettings | null {
     return { osakaNights, usj, kyotoNights, budgetTier, foodSelections }
   } catch (e) {
     console.warn('[share] failed to decode URL hash:', e)
+    return null
+  }
+}
+
+// ─── Confirmed Itinerary Share ───
+
+export function encodeConfirmedUrl(data: ConfirmedItinerary): string {
+  const encoded = compressItinerary(data)
+  return `${window.location.origin}${window.location.pathname}#c=${encoded}`
+}
+
+export function decodeConfirmedUrl(hash: string): ConfirmedItinerary | null {
+  try {
+    const raw = hash.startsWith('#') ? hash.slice(1) : hash
+    if (!raw.startsWith('c=')) return null
+    const encoded = raw.slice(2)
+    if (!encoded) return null
+    const data = decompressItinerary(encoded)
+    if (!data) return null
+    const result = validateItinerary(data)
+    if (!result.valid) {
+      console.warn('[share] confirmed URL data validation failed:', result.error)
+      return null
+    }
+    return data
+  } catch (e) {
+    console.warn('[share] failed to decode confirmed URL:', e)
     return null
   }
 }

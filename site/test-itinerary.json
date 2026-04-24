@@ -1,0 +1,245 @@
+{
+  "title": "오사카·교토 여행",
+  "startDate": "2026-05-15",
+  "endDate": "2026-05-20",
+  "days": [
+    {
+      "date": "2026-05-15",
+      "dayNumber": 1,
+      "title": "오사카 Day 1 로컬 체험 데이",
+      "theme": "로컬 체험",
+      "route": "스미요시타이샤 → 신세카이 → 스파월드",
+      "transport": "한카이 전차 1일권 (¥700) + ICOCA",
+      "slots": [
+        {
+          "time": "12:00~13:00",
+          "place": "八重勝",
+          "category": "쿠시카츠",
+          "note": "신세카이",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E9%87%8D%E5%8B%9D%20%E6%96%B0%E4%B8%96%E7%95%8C",
+          "restaurant": {
+            "nameJa": "八重勝",
+            "tabelog": 3.50,
+            "reviews": 1956,
+            "price": "~¥999"
+          }
+        },
+        {
+          "time": "14:00~16:30",
+          "place": "스파월드 (온천+암반욕)",
+          "category": "온천",
+          "note": "피로 회복"
+        },
+        {
+          "time": "17:30~",
+          "place": "焼肉 きたん 法善寺",
+          "category": "야키니쿠",
+          "note": "전석 개인실, 예약 추천",
+          "restaurant": {
+            "nameJa": "焼肉きたん法善寺",
+            "tabelog": 3.60,
+            "reviews": 571,
+            "price": "¥5,000~5,999"
+          }
+        }
+      ],
+      "accommodation": {
+        "name": "APA 호텔 리조트 오사카 난바역전 타워",
+        "checkIn": "15:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/apa-hotel-resort-osaka-namba-ekimae-tower/hotel/osaka-jp.html"
+      }
+    },
+    {
+      "date": "2026-05-16",
+      "dayNumber": 2,
+      "title": "오사카 Day 2 오사카 첫인상",
+      "route": "오사카성 → 신사이바시 → 우메다 야경",
+      "transport": "주유패스 1일권 (¥3,500)",
+      "slots": [
+        {
+          "time": "09:00~12:00",
+          "place": "오사카성 천수각 + 공원 산책",
+          "category": "관광",
+          "note": "주유패스 무료"
+        },
+        {
+          "time": "12:30~13:30",
+          "place": "道頓堀 今井",
+          "category": "우동",
+          "note": "키츠네 우동 ¥930",
+          "restaurant": {
+            "nameJa": "道頓堀今井本店",
+            "tabelog": 3.58,
+            "reviews": 2266,
+            "price": "~¥999"
+          }
+        },
+        {
+          "time": "15:00~17:00",
+          "place": "신사이바시스지 쇼핑",
+          "category": "쇼핑"
+        }
+      ],
+      "accommodation": {
+        "name": "APA 호텔 리조트 오사카 난바역전 타워",
+        "checkIn": "15:00"
+      }
+    },
+    {
+      "date": "2026-05-17",
+      "dayNumber": 3,
+      "title": "오사카 Day 3 레트로 감성과 밤의 난바",
+      "route": "나카자키쵸 카페 → 우메다 맛집 → 호젠지/크루즈",
+      "transport": "주유패스 1일권 (¥3,500)",
+      "slots": [
+        {
+          "time": "10:00~12:00",
+          "place": "나카자키쵸 레트로 카페 거리",
+          "category": "카페",
+          "note": "고민가 카페 + 아트 케이크"
+        },
+        {
+          "time": "12:30~13:30",
+          "place": "燃えよ麺助",
+          "category": "라멘",
+          "restaurant": {
+            "nameJa": "燃えよ麺助",
+            "tabelog": 3.77,
+            "reviews": 3089,
+            "price": "~¥999"
+          }
+        },
+        {
+          "time": "18:30~19:00",
+          "place": "도톤보리 리버크루즈",
+          "category": "크루즈",
+          "note": "주유패스 무료"
+        },
+        {
+          "time": "19:30~",
+          "place": "ダテダチ",
+          "category": "이자카야",
+          "restaurant": {
+            "nameJa": "ダテダチ",
+            "tabelog": 3.61,
+            "reviews": 553,
+            "price": "¥2,000~2,999"
+          }
+        }
+      ]
+    },
+    {
+      "date": "2026-05-18",
+      "dayNumber": 4,
+      "title": "교토 Day 1 교토의 정수",
+      "route": "기요미즈데라 → 산넨자카 → 기온 → 폰토초",
+      "transport": "한큐 1일 패스 (¥700)",
+      "slots": [
+        {
+          "time": "09:00~10:30",
+          "place": "기요미즈데라",
+          "category": "관광",
+          "note": "입장 ¥500, 세계유산"
+        },
+        {
+          "time": "10:30~12:00",
+          "place": "산넨자카·니넨자카 산책",
+          "category": "산책",
+          "note": "야사카탑 포토"
+        },
+        {
+          "time": "12:00~13:30",
+          "place": "南禅寺 順正",
+          "category": "유도후",
+          "restaurant": {
+            "nameJa": "南禅寺順正",
+            "tabelog": 3.53,
+            "reviews": 767,
+            "price": "¥3,000~3,999"
+          }
+        },
+        {
+          "time": "18:00~20:00",
+          "place": "イカリヤ食堂",
+          "category": "비스트로",
+          "note": "폰토초, 5월 강변 테라스",
+          "restaurant": {
+            "nameJa": "イカリヤ食堂",
+            "tabelog": 3.59,
+            "reviews": 186,
+            "price": "¥3,000~3,999"
+          }
+        }
+      ],
+      "accommodation": {
+        "name": "리치몬드 호텔 프리미어 교토 에키마에",
+        "checkIn": "14:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/richmond-hotel-premier-kyoto-ekimae/hotel/kyoto-jp.html"
+      }
+    },
+    {
+      "date": "2026-05-19",
+      "dayNumber": 5,
+      "title": "교토 Day 2 금각사와 난젠지",
+      "route": "텐류지 → 금각사 → 니시키 → 난젠지 → 오사카",
+      "transport": "교토 지하철+버스 1일권 (¥1,100)",
+      "slots": [
+        {
+          "time": "08:30~09:30",
+          "place": "텐류지 정원 + 대나무숲",
+          "category": "관광",
+          "note": "세계유산, ¥500"
+        },
+        {
+          "time": "10:40~11:30",
+          "place": "금각사",
+          "category": "관광",
+          "note": "¥500, 수면 반사"
+        },
+        {
+          "time": "12:40~13:30",
+          "place": "みます屋 おくどはん",
+          "category": "오반자이",
+          "restaurant": {
+            "nameJa": "みます屋おくどはん",
+            "tabelog": 3.47,
+            "reviews": 447,
+            "price": "¥1,000~1,999"
+          }
+        },
+        {
+          "time": "15:00~16:30",
+          "place": "난젠지 + 수로각",
+          "category": "관광",
+          "note": "포토스팟"
+        }
+      ]
+    },
+    {
+      "date": "2026-05-20",
+      "dayNumber": 6,
+      "title": "오사카 Day 4 먹고 걷고 또 먹기",
+      "route": "구로몬시장 → 도톤보리 → 신세카이",
+      "transport": "주유패스 1일권 (¥3,500)",
+      "slots": [
+        {
+          "time": "09:00~11:00",
+          "place": "구로몬시장 탐방",
+          "category": "시장",
+          "note": "아침 해산물, 오전이 가장 활기참"
+        },
+        {
+          "time": "11:30~12:30",
+          "place": "ニューライト",
+          "category": "양식",
+          "restaurant": {
+            "nameJa": "ニューライト",
+            "tabelog": 3.49,
+            "reviews": 1023,
+            "price": "~¥999"
+          }
+        }
+      ]
+    }
+  ]
+}

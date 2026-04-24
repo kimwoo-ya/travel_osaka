@@ -3,6 +3,7 @@
 ## 프로젝트 목표
 GitHub Pages 정적 사이트로 오사카 여행 계획을 공유한다.
 핵심 기능: 오사카 슬라이더(1박~5박) + USJ 토글 + 교토 토글(1박2일/2박3일)로 콘텐츠가 동적 노출된다.
+확정 일정 JSON을 업로드하면 실제 날짜 기반 타임라인으로 전환, URL로 타인과 공유할 수 있다.
 
 ## 여행 파라미터
 - **목적지**: 오사카, 일본
@@ -177,3 +178,13 @@ GitHub Pages 정적 사이트로 오사카 여행 계획을 공유한다.
 - [x] alternatives.json 프로젝트 반영
 - [x] travel.ts → JSON 분리 (restaurants.json 추출, import 전환)
 - [x] 빌드 확인 (`vite build` 성공, 428 modules)
+
+### Phase 12: 확정 일정 업로드 모드
+- [ ] 확정 일정 JSON 스키마 정의 (날짜, 시간대별 슬롯, 장소, 식당, 숙소, 교통패스)
+- [ ] Obsidian 마크다운 → JSON 변환 스크립트
+- [ ] 파일 업로드 UI (FileReader API, 클라이언트 사이드 파싱)
+- [ ] 확정 일정 뷰 컴포넌트 (실제 날짜 기반 타임라인 + 숙소 표시)
+- [ ] 모드 전환 UI (탐색 모드 ↔ 확정 일정 모드)
+- [ ] URL 공유 (JSON → pako deflate → base64url → URL hash)
+- [ ] localStorage 캐싱 (업로드한 일정 재방문 시 유지)
+- [ ] 빌드 + 배포

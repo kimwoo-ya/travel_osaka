@@ -38,6 +38,9 @@
 ## Active Technologies
 - Python 3.10+ + requests, beautifulsoup4, tabulate (신규) (002-tabelog-search-v2)
 - 파일 기반 (CSV, JSON) (002-tabelog-search-v2)
+- TypeScript 6.0, React 19, framer-motion 12, tailwindcss 4, vite 8, pako (신규) (003-confirmed-itinerary-upload)
+- localStorage + URL hash (003-confirmed-itinerary-upload)
 
 ## Recent Changes
 - 002-tabelog-search-v2: Added Python 3.10+ + requests, beautifulsoup4, tabulate (신규)
+- 003-confirmed-itinerary-upload: Added pako (deflate/inflate 압축)
