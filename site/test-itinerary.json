@@ -28,13 +28,15 @@
           "time": "14:00~16:30",
           "place": "스파월드 (온천+암반욕)",
           "category": "온천",
-          "note": "피로 회복"
+          "note": "피로 회복",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B9%E3%83%91%E3%83%AF%E3%83%BC%E3%83%AB%E3%83%89%E4%B8%96%E7%95%8C%E3%81%AE%E5%A4%A7%E6%B8%A9%E6%B3%89"
         },
         {
           "time": "17:30~",
           "place": "焼肉 きたん 法善寺",
           "category": "야키니쿠",
           "note": "전석 개인실, 예약 추천",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%84%BC%E8%82%89%E3%81%8D%E3%81%9F%E3%82%93%E6%B3%95%E5%96%84%E5%AF%BA",
           "restaurant": {
             "nameJa": "焼肉きたん法善寺",
             "tabelog": 3.60,
@@ -60,13 +62,15 @@
           "time": "09:00~12:00",
           "place": "오사카성 천수각 + 공원 산책",
           "category": "관광",
-          "note": "주유패스 무료"
+          "note": "주유패스 무료",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A7%E9%98%AA%E5%9F%8E%E5%A4%A9%E5%AE%88%E9%96%A3"
         },
         {
           "time": "12:30~13:30",
           "place": "道頓堀 今井",
           "category": "우동",
           "note": "키츠네 우동 ¥930",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%81%93%E9%A0%93%E5%A0%80%E4%BB%8A%E4%BA%95%E6%9C%AC%E5%BA%97",
           "restaurant": {
             "nameJa": "道頓堀今井本店",
             "tabelog": 3.58,
@@ -77,7 +81,15 @@
         {
           "time": "15:00~17:00",
           "place": "신사이바시스지 쇼핑",
-          "category": "쇼핑"
+          "category": "쇼핑",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%82%B5%E3%83%B3%E3%83%88%E3%83%AB%20%E3%82%A8%E3%83%A0%20%E5%BF%83%E6%96%8E%E6%A9%8B",
+          "note": "ちひろ菓子店 ★3.65(467) 양과자·디저트 ¥1,000~1,999"
+        },
+        {
+          "time": "17:00~18:00",
+          "place": "하꺼비 합류",
+          "category": "이동",
+          "note": "오사카 공항으로"
         }
       ],
       "accommodation": {
@@ -98,12 +110,14 @@
           "time": "10:00~12:00",
           "place": "나카자키쵸 레트로 카페 거리",
           "category": "카페",
-          "note": "고민가 카페 + 아트 케이크"
+          "note": "蜜香屋 ★3.55(393) 군고구마/카페 · 고민가 카페 + 아트 케이크",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%AD%E5%B4%8E%E7%94%BA%E3%82%AB%E3%83%95%E3%82%A7"
         },
         {
           "time": "12:30~13:30",
           "place": "燃えよ麺助",
           "category": "라멘",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E7%87%83%E3%81%88%E3%82%88%E9%BA%BA%E5%8A%A9%20%EC%9A%B0%EB%A9%94%EB%8B%A4",
           "restaurant": {
             "nameJa": "燃えよ麺助",
             "tabelog": 3.77,
@@ -112,15 +126,45 @@
           }
         },
         {
+          "time": "14:00~15:00",
+          "place": "麺香房 三く",
+          "category": "라멘",
+          "note": "후쿠시마, 우메다 옆",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BA%BA%E9%A6%99%E6%88%BF%20%E4%B8%89%E3%81%8F",
+          "restaurant": {
+            "nameJa": "麺香房 三く",
+            "tabelog": 3.75,
+            "reviews": 2518,
+            "price": "~¥999"
+          }
+        },
+        {
+          "time": "16:00~16:30",
+          "place": "난바 야사카 신사",
+          "category": "관광",
+          "note": "거대 사자머리 포토",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%9B%A3%E6%B3%A2%E5%85%AB%E9%98%AA%E7%A5%9E%E7%A4%BE"
+        },
+        {
+          "time": "17:00~17:30",
+          "place": "호젠지 요코쵸 산책",
+          "category": "산책",
+          "note": "메오토젠자이, 커플 기원",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B3%95%E5%96%84%E5%AF%BA%E6%A8%AA%E4%B8%81"
+        },
+        {
           "time": "18:30~19:00",
           "place": "도톤보리 리버크루즈",
           "category": "크루즈",
-          "note": "주유패스 무료"
+          "note": "주유패스 무료",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%A8%E3%82%93%E3%81%BC%E3%82%8A%E3%83%AA%E3%83%90%E3%83%BC%E3%82%AF%E3%83%AB%E3%83%BC%E3%82%BA"
         },
         {
           "time": "19:30~",
           "place": "ダテダチ",
           "category": "이자카야",
+          "note": "타치노미·야키토리",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%80%E3%83%86%E3%83%80%E3%83%81%20%EC%9A%B0%EB%9D%BC%EB%82%9C%EB%B0%94",
           "restaurant": {
             "nameJa": "ダテダチ",
             "tabelog": 3.61,
@@ -142,21 +186,31 @@
       "transport": "한큐 1일 패스 (¥700)",
       "slots": [
         {
+          "time": "08:00~09:00",
+          "place": "오사카 → 교토 이동",
+          "category": "이동",
+          "note": "한큐 ¥400 또는 게이한 ¥420"
+        },
+        {
           "time": "09:00~10:30",
           "place": "기요미즈데라",
           "category": "관광",
-          "note": "입장 ¥500, 세계유산"
+          "note": "입장 ¥500, 세계유산",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E6%B8%85%E6%B0%B4%E5%AF%BA"
         },
         {
           "time": "10:30~12:00",
           "place": "산넨자카·니넨자카 산책",
           "category": "산책",
-          "note": "야사카탑 포토"
+          "note": "야사카탑 포토",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E4%B8%89%E5%B9%B4%E5%9D%82%20%E4%BA%8C%E5%B9%B4%E5%9D%82"
         },
         {
           "time": "12:00~13:30",
           "place": "南禅寺 順正",
           "category": "유도후",
+          "note": "하나 코스 ¥3,630",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%E9%A0%86%E6%AD%A3",
           "restaurant": {
             "nameJa": "南禅寺順正",
             "tabelog": 3.53,
@@ -165,16 +219,55 @@
           }
         },
         {
+          "time": "14:00~14:30",
+          "place": "하나미코지 거리",
+          "category": "산책",
+          "note": "마이코를 만날 수도",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E8%8A%B1%E8%A6%8B%E5%B0%8F%E8%B7%AF%E9%80%9A"
+        },
+        {
+          "time": "14:30~15:00",
+          "place": "야사카 신사",
+          "category": "관광",
+          "note": "무료, 연인 기원",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%AB%E5%9D%82%E7%A5%9E%E7%A4%BE"
+        },
+        {
+          "time": "15:00~16:00",
+          "place": "フランソア喫茶室",
+          "category": "카페",
+          "note": "기온",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%95%E3%83%A9%E3%83%B3%E3%82%BD%E3%82%A2%E5%96%AB%E8%8C%B6%E5%AE%A4%20%E7%A5%87%E5%9C%92",
+          "restaurant": {
+            "nameJa": "フランソア喫茶室",
+            "tabelog": 3.72,
+            "reviews": 1720,
+            "price": "¥1,000~1,999"
+          }
+        },
+        {
+          "time": "16:00~17:00",
+          "place": "숙소 체크인",
+          "category": "숙소"
+        },
+        {
           "time": "18:00~20:00",
           "place": "イカリヤ食堂",
           "category": "비스트로",
-          "note": "폰토초, 5월 강변 테라스",
+          "note": "폰토초, 5월 강변 테라스, 예약 필수",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%85%88%E6%96%97%E7%94%BA%20%E3%82%A4%E3%82%AB%E3%83%AA%E3%83%A4%E9%A3%9F%E5%A0%82",
           "restaurant": {
             "nameJa": "イカリヤ食堂",
             "tabelog": 3.59,
             "reviews": 186,
             "price": "¥3,000~3,999"
           }
+        },
+        {
+          "time": "20:00~",
+          "place": "가모가와 강변 야경 산책",
+          "category": "산책",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%B4%A8%E5%B7%9D%20%E5%85%88%E6%96%97%E7%94%BA"
         }
       ],
       "accommodation": {
@@ -192,21 +285,43 @@
       "transport": "교토 지하철+버스 1일권 (¥1,100)",
       "slots": [
         {
-          "time": "08:30~09:30",
-          "place": "텐류지 정원 + 대나무숲",
+          "time": "08:30~09:00",
+          "place": "텐류지 정원",
           "category": "관광",
-          "note": "세계유산, ¥500"
+          "note": "세계유산, ¥500",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%A4%A9%E9%BE%8D%E5%AF%BA"
+        },
+        {
+          "time": "09:00~09:30",
+          "place": "대나무숲 (아침의 고요함)",
+          "category": "관광",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B5%90%E5%B1%B1%E7%AB%B9%E6%9E%97%E3%81%AE%E5%B0%8F%E5%BE%84"
+        },
+        {
+          "time": "10:00~10:40",
+          "place": "이동 → 금각사",
+          "category": "이동",
+          "note": "버스 ~40분"
         },
         {
           "time": "10:40~11:30",
           "place": "금각사",
           "category": "관광",
-          "note": "¥500, 수면 반사"
+          "note": "¥500, 수면 반사",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%87%91%E9%96%A3%E5%AF%BA"
+        },
+        {
+          "time": "12:00~12:40",
+          "place": "이동 → 가와라마치",
+          "category": "이동",
+          "note": "버스 ~40분"
         },
         {
           "time": "12:40~13:30",
           "place": "みます屋 おくどはん",
           "category": "오반자이",
+          "note": "9종 오반자이+가마솥밥 ¥1,360",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%BF%E3%81%BE%E3%81%99%E5%B1%8B%E3%81%8A%E3%81%8F%E3%81%A9%E3%81%AF%E3%82%93",
           "restaurant": {
             "nameJa": "みます屋おくどはん",
             "tabelog": 3.47,
@@ -215,10 +330,25 @@
           }
         },
         {
+          "time": "13:30~15:00",
+          "place": "니시키 시장 → 기온",
+          "category": "산책",
+          "note": "ぎをん小森 ★3.67(1,458) 감미처 · 와라비모찌 파르페",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%81%8E%E3%82%92%E3%82%93%E5%B0%8F%E6%A3%AE"
+        },
+        {
           "time": "15:00~16:30",
           "place": "난젠지 + 수로각",
           "category": "관광",
-          "note": "포토스팟"
+          "note": "포토스팟",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%8D%97%E7%A6%85%E5%AF%BA%20%E6%B0%B4%E8%B7%AF%E9%96%A3"
+        },
+        {
+          "time": "17:00~",
+          "place": "교토 → 오사카 복귀",
+          "category": "이동",
+          "note": "山本まんぼ ★3.69(1,285) 오코노미야키 · 교토역 도보 7분",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E5%B1%B1%E6%9C%AC%E3%81%BE%E3%82%93%E3%81%BC%20%E4%BA%AC%E9%83%BD"
         }
       ],
       "accommodation": {
@@ -232,19 +362,22 @@
       "date": "2026-05-20",
       "dayNumber": 6,
       "title": "오사카 Day 4 먹고 걷고 또 먹기",
-      "route": "구로몬시장 → 도톤보리 → 신세카이",
+      "route": "구로몬시장 → 도톤보리 → 신세카이 → 하루카스",
       "transport": "주유패스 1일권 (¥3,500)",
       "slots": [
         {
           "time": "09:00~11:00",
           "place": "구로몬시장 탐방",
           "category": "시장",
-          "note": "아침 해산물, 오전이 가장 활기참"
+          "note": "아침 해산물, 오전이 가장 활기참",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E9%BB%92%E9%96%80%E5%B8%82%E5%A0%B4"
         },
         {
           "time": "11:30~12:30",
           "place": "ニューライト",
           "category": "양식",
+          "note": "정식·양식·카레",
+          "mapUrl": "https://www.google.com/maps/search/?api=1&query=%E3%83%8B%E3%83%A5%E3%83%BC%E3%83%A9%E3%82%A4%E3%83%88%20%EB%8F%84%ED%86%A4%EB%B3%B4%EB%A6%AC",
           "restaurant": {
             "nameJa": "ニューライト",
             "tabelog": 3.49,
