@@ -19,6 +19,7 @@ export interface ConfirmedSlot {
 export interface Accommodation {
   name: string
   checkIn?: string
+  checkOut?: string
   bookingUrl?: string
 }
 

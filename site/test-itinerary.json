@@ -44,9 +44,9 @@
         }
       ],
       "accommodation": {
-        "name": "APA 호텔 리조트 오사카 난바역전 타워",
+        "name": "Nissin Namba Inn",
         "checkIn": "15:00",
-        "bookingUrl": "https://www.agoda.com/ko-kr/apa-hotel-resort-osaka-namba-ekimae-tower/hotel/osaka-jp.html"
+        "bookingUrl": "https://www.agoda.com/ko-kr/nissin-namba-inn/hotel/osaka-jp.html?ds=ii60hza9mYtdE5hB"
       }
     },
     {
@@ -81,8 +81,10 @@
         }
       ],
       "accommodation": {
-        "name": "APA 호텔 리조트 오사카 난바역전 타워",
-        "checkIn": "15:00"
+        "name": "Red Roof Inn & Suites Osaka Namba",
+        "checkIn": "15:00",
+        "checkOut": "12:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/red-roof-inn-suites-osaka-namba-nippombashi/hotel/osaka-jp.html?ds=ii60hza9mYtdE5hB"
       }
     },
     {
@@ -126,7 +128,11 @@
             "price": "¥2,000~2,999"
           }
         }
-      ]
+      ],
+      "accommodation": {
+        "name": "Red Roof Inn & Suites Osaka Namba",
+        "bookingUrl": "https://www.agoda.com/ko-kr/red-roof-inn-suites-osaka-namba-nippombashi/hotel/osaka-jp.html?ds=ii60hza9mYtdE5hB"
+      }
     },
     {
       "date": "2026-05-18",
@@ -172,9 +178,10 @@
         }
       ],
       "accommodation": {
-        "name": "리치몬드 호텔 프리미어 교토 에키마에",
+        "name": "Richmond Hotel Premier Kyoto Ekimae",
         "checkIn": "14:00",
-        "bookingUrl": "https://www.agoda.com/ko-kr/richmond-hotel-premier-kyoto-ekimae/hotel/kyoto-jp.html"
+        "checkOut": "11:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/richmond-hotel-premier-kyoto-ekimae/hotel/kyoto-jp.html?ds=ii60hza9mYtdE5hB"
       }
     },
     {
@@ -213,7 +220,13 @@
           "category": "관광",
           "note": "포토스팟"
         }
-      ]
+      ],
+      "accommodation": {
+        "name": "APA HOTEL & RESORT OSAKA NAMBA",
+        "checkIn": "15:00",
+        "checkOut": "11:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/apa-hotel-resort-osaka-namba-ekimae-tower/hotel/osaka-jp.html?ds=ii60hza9mYtdE5hB"
+      }
     },
     {
       "date": "2026-05-20",
@@ -239,7 +252,12 @@
             "price": "~¥999"
           }
         }
-      ]
+      ],
+      "accommodation": {
+        "name": "APA HOTEL & RESORT OSAKA NAMBA",
+        "checkOut": "10:00",
+        "bookingUrl": "https://www.agoda.com/ko-kr/apa-hotel-resort-osaka-namba-ekimae-tower/hotel/osaka-jp.html?ds=ii60hza9mYtdE5hB"
+      }
     }
   ]
 }
